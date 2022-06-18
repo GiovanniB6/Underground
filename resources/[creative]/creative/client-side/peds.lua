@@ -875,49 +875,49 @@ local pedList = {
 	
 	{ -- Laranja
 		distance = 30,
-		coords = { 406.08,6526.17,27.75,87.88 },
+		coords = { 383.61,6496.83,28.46,189.93 },
 		model = { 0x94562DD7,"a_m_m_farmer_01" },
 		anim = { "anim@heists@heist_corona@single_team","single_team_loop_boss" }
 	},
 	{ -- Trigo
 		distance = 30,
-		coords = { 405.93,6524.87,27.75,87.88 },
+		coords = { 293.41,6484.83,29.84,5.67 },
 		model = { 0x94562DD7,"a_m_m_farmer_01" },
 		anim = { "anim@heists@heist_corona@single_team","single_team_loop_boss" }
 	},
 	{ -- Tomate
 		distance = 30,
-		coords = { 405.8,6524.01,27.75,87.88 },
+		coords = { 325.9,6486.56,29.08,354.34 },
 		model = { 0x94562DD7,"a_m_m_farmer_01" },
 		anim = { "anim@heists@heist_corona@single_team","single_team_loop_boss" }
 	},
 	{ -- Alface
 		distance = 30,
-		coords = { 405.68,6522.91,27.73,87.88 },
+		coords = { 386.73,6489.33,28.39,0.0 },
 		model = { 0x94562DD7,"a_m_m_farmer_01" },
 		anim = { "anim@heists@heist_corona@single_team","single_team_loop_boss" }
 	},
 	{ -- Morango
 		distance = 30,
-		coords = { 405.29,6521.03,27.7,87.88 },
+		coords = { 360.31,6486.28,28.76,0.0 },
 		model = { 0x94562DD7,"a_m_m_farmer_01" },
 		anim = { "anim@heists@heist_corona@single_team","single_team_loop_boss" }
 	},
 	{ -- Batata
 		distance = 30,
-		coords = { 405.34,6519.92,27.72,87.88 },
+		coords = { 290.81,6485.03,29.98,5.67 },
 		model = { 0x94562DD7,"a_m_m_farmer_01" },
 		anim = { "anim@heists@heist_corona@single_team","single_team_loop_boss" }
 	},
 	{ -- Banana
 		distance = 30,
-		coords = { 405.34,6518.92,27.72,87.88 },
+		coords = { 292.01,6496.09,29.81,178.59 },
 		model = { 0x94562DD7,"a_m_m_farmer_01" },
 		anim = { "anim@heists@heist_corona@single_team","single_team_loop_boss" }
 	},
 	{ -- Cenoura
 		distance = 30,
-		coords = { 405.34,6517.92,27.72,87.88 },
+		coords = { 292.2,6484.98,29.77,5.67 },
 		model = { 0x94562DD7,"a_m_m_farmer_01" },
 		anim = { "anim@heists@heist_corona@single_team","single_team_loop_boss" }
 	},	
