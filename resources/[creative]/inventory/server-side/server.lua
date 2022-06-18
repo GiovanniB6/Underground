@@ -1756,9 +1756,7 @@ AddEventHandler("inventory:useItem",function(Slot,Amount)
 									if GetVehicleDoorLockStatus(idNetwork) == 2 then
 										SetVehicleDoorsLocked(idNetwork,1)
 									end
-								end
-
-								if math.random(100) >= 75 then
+								
 									local activePlayers = vRPC.activePlayers(source)
 									for _,v in ipairs(activePlayers) do
 										async(function()
@@ -1801,15 +1799,13 @@ AddEventHandler("inventory:useItem",function(Slot,Amount)
 									if GetVehicleDoorLockStatus(idNetwork) == 2 then
 										SetVehicleDoorsLocked(idNetwork,1)
 									end
-								end
 
-								if math.random(100) >= 75 then
-									local activePlayers = vRPC.activePlayers(source)
-									for _,v in ipairs(activePlayers) do
-										async(function()
-											TriggerClientEvent("inventory:vehicleAlarm",v,vehNet,vehPlate)
-										end)
-									end
+								local activePlayers = vRPC.activePlayers(source)
+								for _,v in ipairs(activePlayers) do
+									async(function()
+										TriggerClientEvent("inventory:vehicleAlarm",v,vehNet,vehPlate)
+									end)
+								end
 
 									local coords = vRPC.getEntityCoords(source)
 									local policeResult = vRP.numPermission("Police")
