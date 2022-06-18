@@ -42,6 +42,92 @@ local pedList = {
 		model = { 0xF1E823A2,"g_m_m_armboss_01" },
 		anim = { "timetable@trevor@smoking_meth@base","base" }
 	},
+	{ -- Leiteiro
+		distance = 100,
+		coords = { 2440.58,4736.35,34.29,317.50 },
+		model = { 0xFCFA9E1E,"a_c_cow" }
+	},
+	{ -- Leiteiro
+		distance = 100,
+		coords = { 2432.5,4744.58,34.31,317.50 },
+		model = { 0xFCFA9E1E,"a_c_cow" }
+	},
+	{ -- Leiteiro
+		distance = 100,
+		coords = { 2424.47,4752.37,34.31,317.50 },
+		model = { 0xFCFA9E1E,"a_c_cow" }
+	},
+	{ -- Leiteiro
+		distance = 100,
+		coords = { 2416.28,4760.8,34.31,317.50 },
+		model = { 0xFCFA9E1E,"a_c_cow" }
+	},
+	{ -- Leiteiro
+		distance = 100,
+		coords = { 2408.6,4768.88,34.31,317.50 },
+		model = { 0xFCFA9E1E,"a_c_cow" }
+	},
+	{ -- Leiteiro
+		distance = 100,
+		coords = { 2400.32,4777.48,34.53,317.50 },
+		model = { 0xFCFA9E1E,"a_c_cow" }
+	},
+	{ -- Leiteiro
+		distance = 100,
+		coords = { 2432.46,4802.66,34.83,137.50 },
+		model = { 0xFCFA9E1E,"a_c_cow" }
+	},
+	{ -- Leiteiro
+		distance = 100,
+		coords = { 2440.62,4794.22,34.66,137.50 },
+		model = { 0xFCFA9E1E,"a_c_cow" }
+	},
+	{ -- Leiteiro
+		distance = 100,
+		coords = { 2448.65,4786.57,34.64,137.50 },
+		model = { 0xFCFA9E1E,"a_c_cow" }
+	},
+	{ -- Leiteiro
+		distance = 100,
+		coords = { 2456.88,4778.08,34.49,137.50 },
+		model = { 0xFCFA9E1E,"a_c_cow" }
+	},
+	{ -- Leiteiro
+		distance = 100,
+		coords = { 2464.53,4770.04,34.37,137.50 },
+		model = { 0xFCFA9E1E,"a_c_cow" }
+	},
+	{ -- Leiteiro
+		distance = 100,
+		coords = { 2473.38,4760.98,34.31,137.50 },
+		model = { 0xFCFA9E1E,"a_c_cow" }
+	},
+	{ -- Leiteiro
+		distance = 100,
+		coords = { 2495.03,4762.77,34.37,137.50 },
+		model = { 0xFCFA9E1E,"a_c_cow" }
+	},
+	{ -- Leiteiro
+		distance = 100,
+		coords = { 2503.13,4754.08,34.31,137.50 },
+		model = { 0xFCFA9E1E,"a_c_cow" }
+	},
+	{ -- Leiteiro
+		distance = 100,
+		coords = { 2511.34,4746.04,34.31,137.50 },
+		model = { 0xFCFA9E1E,"a_c_cow" }
+	},
+	{ -- Leiteiro
+		distance = 100,
+		coords = { 2519.56,4737.35,34.29,137.50 },
+		model = { 0xFCFA9E1E,"a_c_cow" }
+	},
+	{ -- Agricultor
+		distance = 100,
+		coords = { 2301.09,5064.78,45.81,170.08 },
+		model = { 0x1536D95A,"a_m_o_ktown_01" },
+		anim = { "anim@heists@heist_corona@single_team","single_team_loop_boss" }
+	},
 	{ -- Imobiliária
 		distance = 100,
 		coords = { 1655.27,4874.31,42.04,280.63 },
@@ -687,6 +773,12 @@ local pedList = {
 		model = { 0xC79F6928,"a_f_y_beach_01" },
 		anim = { "anim@heists@heist_corona@single_team","single_team_loop_boss" }
 	},
+	{ -- Colheita
+		distance = 30,
+		coords = { 406.08,6526.17,27.75,87.88 },
+		model = { 0x94562DD7,"a_m_m_farmer_01" },
+		anim = { "anim@heists@heist_corona@single_team","single_team_loop_boss" }
+	},
 	{ -- Motorista
 		distance = 30,
 		coords = { 452.97,-607.75,28.59,266.46 },
@@ -866,140 +958,6 @@ local pedList = {
 		coords = { 1524.77,3783.84,34.49,187.09 },
 		model = { 0x51C03FA4,"a_f_y_eastsa_03" },
 		anim = { "anim@heists@heist_corona@single_team","single_team_loop_boss" }
-	},
-	
-	
-	--------------
-	-- COLHEITA --
-	--------------
-	
-	{ -- Laranja
-		distance = 30,
-		coords = { 406.08,6526.17,27.75,87.88 },
-		model = { 0x94562DD7,"a_m_m_farmer_01" },
-		anim = { "anim@heists@heist_corona@single_team","single_team_loop_boss" }
-	},
-	{ -- Trigo
-		distance = 30,
-		coords = { 405.93,6524.87,27.75,87.88 },
-		model = { 0x94562DD7,"a_m_m_farmer_01" },
-		anim = { "anim@heists@heist_corona@single_team","single_team_loop_boss" }
-	},
-	{ -- Tomate
-		distance = 30,
-		coords = { 405.8,6524.01,27.75,87.88 },
-		model = { 0x94562DD7,"a_m_m_farmer_01" },
-		anim = { "anim@heists@heist_corona@single_team","single_team_loop_boss" }
-	},
-	{ -- Alface
-		distance = 30,
-		coords = { 405.68,6522.91,27.73,87.88 },
-		model = { 0x94562DD7,"a_m_m_farmer_01" },
-		anim = { "anim@heists@heist_corona@single_team","single_team_loop_boss" }
-	},
-	{ -- Morango
-		distance = 30,
-		coords = { 405.29,6521.03,27.7,87.88 },
-		model = { 0x94562DD7,"a_m_m_farmer_01" },
-		anim = { "anim@heists@heist_corona@single_team","single_team_loop_boss" }
-	},
-	{ -- Batata
-		distance = 30,
-		coords = { 405.34,6519.92,27.72,87.88 },
-		model = { 0x94562DD7,"a_m_m_farmer_01" },
-		anim = { "anim@heists@heist_corona@single_team","single_team_loop_boss" }
-	},
-	{ -- Banana
-		distance = 30,
-		coords = { 405.34,6518.92,27.72,87.88 },
-		model = { 0x94562DD7,"a_m_m_farmer_01" },
-		anim = { "anim@heists@heist_corona@single_team","single_team_loop_boss" }
-	},
-	{ -- Cenoura
-		distance = 30,
-		coords = { 405.34,6517.92,27.72,87.88 },
-		model = { 0x94562DD7,"a_m_m_farmer_01" },
-		anim = { "anim@heists@heist_corona@single_team","single_team_loop_boss" }
-	},	
-	{ -- Vaca
-		distance = 100,
-		coords = { 427.31,6462.03,28.76,325.99 },
-		model = { 0xFCFA9E1E,"a_c_cow" }
-	},
-	{ -- Vaca
-		distance = 100,
-		coords = { 425.2,6464.19,28.78,320.32 },
-		model = { 0xFCFA9E1E,"a_c_cow" }
-	},
-	{ -- Vaca
-		distance = 100,
-		coords = { 429.88,6460.2,28.76,323.15 },
-		model = { 0xFCFA9E1E,"a_c_cow" }
-	},
-	{ -- Vaca
-		distance = 100,
-		coords = { 432.23,6457.71,28.75,323.15 },
-		model = { 0xFCFA9E1E,"a_c_cow" }
-	},
-	{ -- Vaca
-		distance = 100,
-		coords = { 435.33,6455.44,28.75,323.15 },
-		model = { 0xFCFA9E1E,"a_c_cow" }
-	},
-	{ -- Vaca
-		distance = 100,
-		coords = { 438.19,6453.03,28.78,323.15 },
-		model = { 0xFCFA9E1E,"a_c_cow" }
-	},
-	{ -- Vaca
-		distance = 100,
-		coords = { 433.88,6472.03,28.76,39.69 },
-		model = { 0xFCFA9E1E,"a_c_cow" }
-	},
-	{ -- Galinha
-		distance = 100,
-		coords = { 433.88,6472.03,28.76,39.69 },
-		model = { 0x6AF51FAF,"a_c_hen" }
-	},
-	{ -- Galinha
-		distance = 100,
-		coords = { 426.93,6477.87,28.81,161.58 },
-		model = { 0x6AF51FAF,"a_c_hen" }
-	},
-	{ -- Galinha
-		distance = 100,
-		coords = { 428.18,6473.48,28.78,107.72 },
-		model = { 0x6AF51FAF,"a_c_hen" }
-	},
-	{ -- Galinha
-		distance = 100,
-		coords = { 431.54,6468.69,28.76,212.6 },
-		model = { 0x6AF51FAF,"a_c_hen" }
-	},
-	{ -- Galinha
-		distance = 100,
-		coords = { 420.94,6468.06,28.81,0.0 },
-		model = { 0x6AF51FAF,"a_c_hen" }
-	},
-	{ -- Galinha
-		distance = 100,
-		coords = { 436.9,6461.58,28.75,11.34 },
-		model = { 0x6AF51FAF,"a_c_hen" }
-	},
-	{ -- Galinha
-		distance = 100,
-		coords = { 426.69,6468.12,28.78,31.19 },
-		model = { 0x6AF51FAF,"a_c_hen" }
-	},
-	{ -- Galinha
-		distance = 100,
-		coords = { 441.24,6459.74,28.75,99.22 },
-		model = { 0x6AF51FAF,"a_c_hen" }
-	},
-	{ -- Vender Alimentos
-		distance = 50,
-		coords = { 441.24,6459.74,28.75,99.22 },
-		model = { 0x31430342,"a_f_y_business_02" }
 	}
 }
 -----------------------------------------------------------------------------------------------------------------------------------------
