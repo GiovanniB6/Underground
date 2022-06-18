@@ -95,8 +95,12 @@ local tableList = {
 		}, ["needAmount"] = 1, ["item"] = "foodbox", ["itemAmount"] = 1 }
 	},
 	["milkBottle"] = {
-		["anim"] = { "amb@prop_human_parking_meter@female@idle_a","idle_a_female" },
+		["anim"] = { "amb@medic@standing@tendtodead@idle_a","idle_a" },
 		[1] = { ["timer"] = 10, ["need"] = "emptybottle", ["needAmount"] = 1,  ["item"] = "milkbottle", ["itemAmount"] = 1 }
+	},
+	["eggCarton"] = {
+		["anim"] = { "amb@medic@standing@tendtodead@idle_a","idle_a" },
+		[1] = { ["timer"] = 10, ["need"] = "eggcarton", ["needAmount"] = 1,  ["item"] = "egg", ["itemAmount"] = 1 }
 	},
 	["scanner"] = {
 		[1] = { ["timer"] = 5, ["item"] = "sheetmetal", ["itemAmount"] = 1 },

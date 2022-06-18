@@ -941,7 +941,23 @@ local itemlist = {
 		["type"] = "Usável",
 		["weight"] = 0.15,
 		["scape"] = true,
-		["max"] = 5
+		["max"] = 50
+	},
+	["egg"] = {
+		["index"] = "egg",
+		["name"] = "Ovo",
+		["type"] = "Comum",
+		["weight"] = 0.15,
+		["scape"] = true,
+		["max"] = 50
+	},
+	["eggcarton"] = {
+		["index"] = "eggcarton",
+		["name"] = "Cartela de Ovos Vazia",
+		["type"] = "Comum",
+		["weight"] = 0.10,
+		["scape"] = true,
+		["max"] = 50
 	},
 	["water"] = {
 		["index"] = "water",
@@ -2274,6 +2290,143 @@ local itemlist = {
 		["name"] = "Pendrive",
 		["type"] = "Comum",
 		["durability"] = 7,
+		["weight"] = 0.25
+	},
+	
+	
+--------------
+-- COLHEITA --
+--------------
+
+	["lettuce"] = {
+		["index"] = "lettuce",
+		["name"] = "Alface",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["carrot"] = {
+		["index"] = "carrot",
+		["name"] = "Cenoura",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["potato"] = {
+		["index"] = "potato",
+		["name"] = "Batata",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	
+------------------
+-- INGREDIENTES --
+------------------	
+	
+	["claraemneve"] = {
+		["index"] = "claraemneve",
+		["name"] = "Clara em Neve",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["caldadechocolate"] = {
+		["index"] = "caldadechocolate",
+		["name"] = "Calda de Chocolate",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["carnefatiada"] = {
+		["index"] = "carnefatiada",
+		["name"] = "Carne Fatiada",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["linguiçacalabresa"] = {
+		["index"] = "linguiçacalabresa",
+		["name"] = "Linguiça Calabresa",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["frangocortado"] = {
+		["index"] = "frangocortado",
+		["name"] = "Frango Cortado",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["peixefatiado"] = {
+		["index"] = "peixefatiado",
+		["name"] = "Peixe Fatiado",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["tomatecortado"] = {
+		["index"] = "tomatecortado",
+		["name"] = "Tomate Cortado",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["alfacelavado"] = {
+		["index"] = "alfacelavado",
+		["name"] = "Alface Lavado",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["alganori"] = {
+		["index"] = "alganori",
+		["name"] = "Alga Nori",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["cenouralavada"] = {
+		["index"] = "cenouralavada",
+		["name"] = "Cenoura Lavada",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["laranjacortada"] = {
+		["index"] = "laranjacortada",
+		["name"] = "Laranja Cortada",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["morangocortado"] = {
+		["index"] = "morangocortado",
+		["name"] = "Morango Cortado",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["arroz"] = {
+		["index"] = "arroz",
+		["name"] = "Arroz",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["macarrao"] = {
+		["index"] = "macarrao",
+		["name"] = "Macarrão",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["farinhadetrigo"] = {
+		["index"] = "farinhadetrigo",
+		["name"] = "Farinha de Trigo",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["batatacortada"] = {
+		["index"] = "batatacortada",
+		["name"] = "Batata Cortada",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["bananacortada"] = {
+		["index"] = "bananacortada",
+		["name"] = "Banana Cortada",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["destiladodepreparacao"] = {
+		["index"] = "destiladodepreparacao",
+		["name"] = "Destilado de Preparação",
+		["type"] = "Comum",
 		["weight"] = 0.25
 	}
 }
