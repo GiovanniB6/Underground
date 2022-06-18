@@ -1224,7 +1224,6 @@ local itemlist = {
 		["name"] = "Lockpick de Alumínio",
 		["desc"] = "Utilizada para roubar veículos.",
 		["type"] = "Usável",
-		["durability"] = 3,
 		["weight"] = 1.25
 	},
 	["lockpick2"] = {
@@ -1232,7 +1231,6 @@ local itemlist = {
 		["name"] = "Lockpick de Cobre",
 		["desc"] = "Utilizada para roubar propriedades.",
 		["type"] = "Usável",
-		["durability"] = 3,
 		["weight"] = 1.25
 	},
 	["brokenpick"] = {
