@@ -998,7 +998,7 @@ local pedList = {
 	},
 	{ -- Vender Alimentos
 		distance = 50,
-		coords = { 441.24,6459.74,28.75,99.22 },
+		coords = { 29.17,-1770.15,29.6,48.19 },
 		model = { 0x31430342,"a_f_y_business_02" }
 	},
 	{ -- Super

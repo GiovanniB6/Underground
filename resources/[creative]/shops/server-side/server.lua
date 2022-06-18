@@ -476,6 +476,22 @@ local shops = {
 			["pendrive"] = 275
 		}
 	},
+	["colheitaMega"] = {
+		["mode"] = "Sell",
+		["type"] = "Cash",
+		["list"] = {
+			["orange"] = 0,
+			["egg"] = 0,
+			["milkbottle"] = 0,
+			["strawberry"] = 0,
+			["wheat"] = 0,
+			["tomato"] = 0,
+			["lettuce"] = 0,
+			["potato"] = 0,
+			["banana"] = 0,
+			["carrot"] = 0
+		}
+	},
 	["mcFridge"] = {
 		["mode"] = "Buy",
 		["type"] = "Cash",
