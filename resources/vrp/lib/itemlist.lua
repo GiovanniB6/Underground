@@ -1641,6 +1641,14 @@ local itemlist = {
 		["durability"] = 7,
 		["weight"] = 0.75
 	},
+	["WEAPON_RPG"] = {
+		["index"] = "rpg-7",
+		["name"] = "RPG-7",
+		["type"] = "Armamento",
+		["ammo"] = "WEAPON_RPG_AMMO",
+		["durability"] = 5,
+		["weight"] = 20.25
+	},
 	["WEAPON_PISTOL"] = {
 		["index"] = "m1911",
 		["name"] = "M1911",
@@ -1694,6 +1702,15 @@ local itemlist = {
 		["vehicle"] = true,
 		["weight"] = 1.75
 	},
+	["WEAPON_COMBATPDW"] = {
+		["index"] = "sigmpx",
+		["name"] = "Sig MPX",
+		["type"] = "Armamento",
+		["ammo"] = "WEAPON_SMG_AMMO",
+		["durability"] = 14,
+		["vehicle"] = true,
+		["weight"] = 1.80
+	},
 	["WEAPON_MICROSMG"] = {
 		["index"] = "uzi",
 		["name"] = "Uzi",
@@ -1739,6 +1756,24 @@ local itemlist = {
 		["vehicle"] = true,
 		["weight"] = 1.25
 	},
+	["WEAPON_CERAMICPISTOL"] = {
+		["index"] = "sr22",
+		["name"] = "SR22",
+		["type"] = "Armamento",
+		["ammo"] = "WEAPON_PISTOL_AMMO",
+		["durability"] = 14,
+		["vehicle"] = true,
+		["weight"] = 1.25
+	},
+	["WEAPON_GADGETPISTOL"] = {
+		["index"] = "mauser",
+		["name"] = "Mauser",
+		["type"] = "Armamento",
+		["ammo"] = "WEAPON_PISTOL_AMMO",
+		["durability"] = 14,
+		["vehicle"] = true,
+		["weight"] = 1.25
+	},
 	["WEAPON_PISTOL50"] = {
 		["index"] = "desert",
 		["name"] = "Desert Eagle",
@@ -1756,6 +1791,42 @@ local itemlist = {
 		["durability"] = 14,
 		["vehicle"] = true,
 		["weight"] = 1.50
+	},
+	["WEAPON_REVOLVER_MK2"] = {
+		["index"] = "blackhawk",
+		["name"] = "Blackhawk",	
+		["type"] = "Armamento",
+		["ammo"] = "WEAPON_PISTOL_AMMO",
+		["durability"] = 14,
+		["vehicle"] = true,
+		["weight"] = 1.65
+	},
+	["WEAPON_DOUBLEACTION"] = {
+		["index"] = "rt66",
+		["name"] = "RT66",
+		["type"] = "Armamento",
+		["ammo"] = "WEAPON_PISTOL_AMMO",
+		["durability"] = 14,
+		["vehicle"] = true,
+		["weight"] = 1.40
+	},
+	["WEAPON_NAVYREVOLVER"] = {
+		["index"] = "redhawk",
+		["name"] = "Redhawk",
+		["type"] = "Armamento",
+		["ammo"] = "WEAPON_PISTOL_AMMO",
+		["durability"] = 14,
+		["vehicle"] = true,
+		["weight"] = 1.70
+	},
+	["WEAPON_MARKSMANPISTOL"] = {
+		["index"] = "huntingpistol",
+		["name"] = "Pistola de Caça",
+		["type"] = "Armamento",
+		["ammo"] = "WEAPON_MUSKET_AMMO",
+		["durability"] = 12,
+		["vehicle"] = false,
+		["weight"] = 1.80
 	},
 	["WEAPON_COMBATPISTOL"] = {
 		["index"] = "glock",
@@ -1808,7 +1879,7 @@ local itemlist = {
 	},
 	["WEAPON_SPECIALCARBINE"] = {
 		["index"] = "g36c",
-		["name"] = "G36C",
+		["name"] = "G3",
 		["type"] = "Armamento",
 		["ammo"] = "WEAPON_RIFLE_AMMO",
 		["durability"] = 21,
@@ -1816,11 +1887,51 @@ local itemlist = {
 	},
 	["WEAPON_SPECIALCARBINE_MK2"] = {
 		["index"] = "sigsauer556",
-		["name"] = "Sig Sauer 556",
+		["name"] = "G36C",
 		["type"] = "Armamento",
 		["ammo"] = "WEAPON_RIFLE_AMMO",
 		["durability"] = 21,
 		["weight"] = 8.25
+	},
+	["WEAPON_HEAVYRIFLE"] = {
+		["index"] = "scar-h",
+		["name"] = "Scar-H",
+		["type"] = "Armamento",
+		["ammo"] = "WEAPON_RIFLE_AMMO",
+		["durability"] = 21,
+		["weight"] = 8.25
+	},
+	["WEAPON_MILITARYRIFLE"] = {
+		["index"] = "auga3",
+		["name"] = "Aug-A3",
+		["type"] = "Armamento",
+		["ammo"] = "WEAPON_RIFLE_AMMO",
+		["durability"] = 21,
+		["weight"] = 8.25
+	},
+	["WEAPON_COMBATMG_MK2"] = {
+		["index"] = "fnspw",
+		["name"] = "FN SPW",
+		["type"] = "Armamento",
+		["ammo"] = "WEAPON_RIFLE_AMMO",
+		["durability"] = 25,
+		["weight"] = 10.35
+	},
+	["WEAPON_COMBATMG"] = {
+		["index"] = "mk46",
+		["name"] = "MK46",
+		["type"] = "Armamento",
+		["ammo"] = "WEAPON_RIFLE_AMMO",
+		["durability"] = 25,
+		["weight"] = 10.35
+	},
+	["WEAPON_MG"] = {
+		["index"] = "m249",
+		["name"] = "M249",
+		["type"] = "Armamento",
+		["ammo"] = "WEAPON_RIFLE_AMMO",
+		["durability"] = 25,
+		["weight"] = 10.35
 	},
 	["WEAPON_PUMPSHOTGUN"] = {
 		["index"] = "mossberg590",
@@ -1851,6 +1962,22 @@ local itemlist = {
 		["name"] = "Sauer 101",
 		["type"] = "Armamento",
 		["ammo"] = "WEAPON_MUSKET_AMMO",
+		["durability"] = 21,
+		["weight"] = 8.25
+	},
+	["WEAPON_HEAVYSNIPER_MK2"] = {
+		["index"] = "barret",
+		["name"] = "Barret",
+		["type"] = "Armamento",
+		["ammo"] = "WEAPON_RIFLE_AMMO",
+		["durability"] = 21,
+		["weight"] = 8.25
+	},
+	["WEAPON_MARKSMANRIFLE_MK2"] = {
+		["index"] = "mk17",
+		["name"] = "MK17",
+		["type"] = "Armamento",
+		["ammo"] = "WEAPON_RIFLE_AMMO",
 		["durability"] = 21,
 		["weight"] = 8.25
 	},
@@ -1959,6 +2086,24 @@ local itemlist = {
 		["economy"] = 225,
 		["max"] = 3
 	},
+	["WEAPON_GRENADE"] = {
+		["index"] = "grenade",
+		["name"] = "Granada",
+		["type"] = "Throwing",
+		["vehicle"] = true,
+		["weight"] = 0.50,
+		["economy"] = 225,
+		["max"] = 3
+	},
+	["WEAPON_FLARE"] = {
+		["index"] = "flare",
+		["name"] = "Sinalizador",
+		["type"] = "Throwing",
+		["vehicle"] = true,
+		["weight"] = 0.50,
+		["economy"] = 225,
+		["max"] = 3
+	},
 	["GADGET_PARACHUTE"] = {
 		["index"] = "parachute",
 		["name"] = "Paraquedas",
@@ -1971,6 +2116,12 @@ local itemlist = {
 		["type"] = "Armamento",
 		["durability"] = 21,
 		["weight"] = 0.75
+	},
+	["WEAPON_RPG_AMMO"] = {
+		["index"] = "rpgammo",
+		["name"] = "Munição de RPG",
+		["type"] = "Munição",
+		["weight"] = 0.10
 	},
 	["WEAPON_PISTOL_AMMO"] = {
 		["index"] = "pistolammo",
