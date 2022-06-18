@@ -885,7 +885,7 @@ Citizen.CreateThread(function()
 			local distance = #(coords - vector3(v["coords"][1],v["coords"][2],v["coords"][3]))
 			if distance <= 50 then
 				timeDistance = 1
-				DrawMarker(21,v["coords"][1],v["coords"][2],v["coords"][3] + 0.25,0.0,0.0,0.0,0.0,180.0,0.0,0.25,0.35,0.25,46,110,76,100,0,0,0,1)
+                DrawMarker(28,v["coords"][1],v["coords"][2],v["coords"][3] + 0.1,0,0,0,180.0,0,0,0.05,0.05,0.05,0,210,240,140,0,0,0,0)
 			end
 		end
 
