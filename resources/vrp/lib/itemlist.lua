@@ -178,28 +178,74 @@ local itemlist = {
 		["type"] = "Usável",
 		["weight"] = 0.05
 	},
+	["attachsBarrel"] = {
+		["index"] = "attachsBarrel",
+		["name"] = "Cano Pesado",
+		["type"] = "Usável",
+		["ilegal"] = true,
+		["weight"] = 0.75
+	},
+	["attachsMuzzleHeavy"] = {
+		["index"] = "attachsMuzzleHeavy",
+		["name"] = "Compensador Tatico",
+		["type"] = "Usável",
+		["ilegal"] = true,
+		["weight"] = 0.75
+	},
+	["attachsMuzzleFat"] = {
+		["index"] = "attachsMuzzleFat",
+		["name"] = "Compensador Pesado",
+		["type"] = "Usável",
+		["ilegal"] = true,
+		["weight"] = 0.75
+	},
 	["attachsFlashlight"] = {
 		["index"] = "attachsFlashlight",
 		["name"] = "Lanterna Tatica",
 		["type"] = "Usável",
+		["ilegal"] = true,
 		["weight"] = 0.75
 	},
 	["attachsCrosshair"] = {
 		["index"] = "attachsCrosshair",
+		["name"] = "Mira Ajustável",
+		["type"] = "Usável",
+		["ilegal"] = true,
+		["weight"] = 0.75
+	},
+	["attachsCrosshair2"] = {
+		["index"] = "attachsCrosshair2",
+		["name"] = "Mira Red Dot",
+		["type"] = "Usável",
+		["ilegal"] = true,
+		["weight"] = 0.75
+	},
+	["attachsCrosshair3"] = {
+		["index"] = "attachsCrosshair3",
 		["name"] = "Mira Holográfica",
 		["type"] = "Usável",
+		["ilegal"] = true,
 		["weight"] = 0.75
 	},
 	["attachsSilencer"] = {
 		["index"] = "attachsSilencer",
-		["name"] = "Silenciador",
+		["name"] = "Supressor",
 		["type"] = "Usável",
+		["ilegal"] = true,
 		["weight"] = 0.75
 	},
 	["attachsGrip"] = {
 		["index"] = "attachsGrip",
 		["name"] = "Empunhadura",
 		["type"] = "Usável",
+		["ilegal"] = true,
+		["weight"] = 0.75
+	},
+	["attachsExtendedClip"] = {
+		["index"] = "attachsExtendedClip",
+		["name"] = "Carregador Estendido",
+		["type"] = "Usável",
+		["ilegal"] = true,
 		["weight"] = 0.75
 	},
 	["cheese"] = {
