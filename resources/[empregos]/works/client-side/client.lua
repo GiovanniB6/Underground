@@ -33,7 +33,7 @@ Citizen.CreateThread(function()
 
 			for k,v in pairs(works) do
 				local distance = #(coords - vector3(v["coords"][1],v["coords"][2],v["coords"][3]))
-				if distance <= 2 then
+				if distance <= 0.7 then
 					timeDistance = 1
 
 					if not inService then

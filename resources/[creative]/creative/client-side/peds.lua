@@ -881,7 +881,7 @@ local pedList = {
 	},
 	{ -- Trigo
 		distance = 30,
-		coords = { 293.41,6484.83,29.84,5.67 },
+		coords = { 293.97,6485.13,29.87,8.51 }, 
 		model = { 0x94562DD7,"a_m_m_farmer_01" },
 		anim = { "anim@heists@heist_corona@single_team","single_team_loop_boss" }
 	},

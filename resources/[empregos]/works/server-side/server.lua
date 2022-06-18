@@ -403,7 +403,7 @@ local works = {
 	},
 	
 		["Trigo"] = {
-		["coords"] = { 293.41,6484.83,29.84,5.67 },
+		["coords"] = { 293.97,6485.13,29.87 },
 		["upgradeStress"] = 1,
 		["routeCollect"] = false,
 		["routeDelivery"] = false,
