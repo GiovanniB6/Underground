@@ -1,3 +1,4 @@
 artifacts
-server.cfg
 cache
+server.cfg
+resources\[addons]
