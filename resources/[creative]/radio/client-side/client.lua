@@ -44,6 +44,7 @@ end)
 RegisterNUICallback("activeFrequency",function(data)
 	if parseInt(data["freq"]) >= 1 and parseInt(data["freq"]) <= 999 then
 		vSERVER.activeFrequency(data["freq"])
+		TriggerEvent("sounds:source","enterradio",0.5)
 	end
 end)
 -----------------------------------------------------------------------------------------------------------------------------------------
@@ -51,6 +52,7 @@ end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 RegisterNUICallback("inativeFrequency",function()
 	TriggerEvent("radio:outServers")
+	TriggerEvent("sounds:source","leaveradio",0.5)
 end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- STARTFREQUENCY
@@ -71,6 +73,7 @@ RegisterNetEvent("radio:outServers")
 AddEventHandler("radio:outServers",function()
 	if activeFrequencys ~= 0 then
 		TriggerEvent("Notify","amarelo","Rádio desativado.",5000)
+		TriggerEvent("sounds:source","leaveradio",0.5)
 		exports["pma-voice"]:removePlayerFromRadio()
 		TriggerEvent("hud:Radio",0)
 		activeFrequencys = 0
