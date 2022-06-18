@@ -178,74 +178,28 @@ local itemlist = {
 		["type"] = "Usável",
 		["weight"] = 0.05
 	},
-	["attachsBarrel"] = {
-		["index"] = "attachsBarrel",
-		["name"] = "Cano Pesado",
-		["type"] = "Usável",
-		["ilegal"] = true,
-		["weight"] = 0.75
-	},
-	["attachsMuzzleHeavy"] = {
-		["index"] = "attachsMuzzleHeavy",
-		["name"] = "Compensador Tatico",
-		["type"] = "Usável",
-		["ilegal"] = true,
-		["weight"] = 0.75
-	},
-	["attachsMuzzleFat"] = {
-		["index"] = "attachsMuzzleFat",
-		["name"] = "Compensador Pesado",
-		["type"] = "Usável",
-		["ilegal"] = true,
-		["weight"] = 0.75
-	},
 	["attachsFlashlight"] = {
 		["index"] = "attachsFlashlight",
 		["name"] = "Lanterna Tatica",
 		["type"] = "Usável",
-		["ilegal"] = true,
 		["weight"] = 0.75
 	},
 	["attachsCrosshair"] = {
 		["index"] = "attachsCrosshair",
-		["name"] = "Mira Ajustável",
-		["type"] = "Usável",
-		["ilegal"] = true,
-		["weight"] = 0.75
-	},
-	["attachsCrosshair2"] = {
-		["index"] = "attachsCrosshair2",
-		["name"] = "Mira Red Dot",
-		["type"] = "Usável",
-		["ilegal"] = true,
-		["weight"] = 0.75
-	},
-	["attachsCrosshair3"] = {
-		["index"] = "attachsCrosshair3",
 		["name"] = "Mira Holográfica",
 		["type"] = "Usável",
-		["ilegal"] = true,
 		["weight"] = 0.75
 	},
 	["attachsSilencer"] = {
 		["index"] = "attachsSilencer",
-		["name"] = "Supressor",
+		["name"] = "Silenciador",
 		["type"] = "Usável",
-		["ilegal"] = true,
 		["weight"] = 0.75
 	},
 	["attachsGrip"] = {
 		["index"] = "attachsGrip",
 		["name"] = "Empunhadura",
 		["type"] = "Usável",
-		["ilegal"] = true,
-		["weight"] = 0.75
-	},
-	["attachsExtendedClip"] = {
-		["index"] = "attachsExtendedClip",
-		["name"] = "Carregador Estendido",
-		["type"] = "Usável",
-		["ilegal"] = true,
 		["weight"] = 0.75
 	},
 	["cheese"] = {
@@ -987,7 +941,23 @@ local itemlist = {
 		["type"] = "Usável",
 		["weight"] = 0.15,
 		["scape"] = true,
-		["max"] = 5
+		["max"] = 50
+	},
+	["egg"] = {
+		["index"] = "egg",
+		["name"] = "Ovo",
+		["type"] = "Comum",
+		["weight"] = 0.15,
+		["scape"] = true,
+		["max"] = 50
+	},
+	["eggcarton"] = {
+		["index"] = "eggcarton",
+		["name"] = "Cartela de Ovos Vazia",
+		["type"] = "Comum",
+		["weight"] = 0.10,
+		["scape"] = true,
+		["max"] = 50
 	},
 	["water"] = {
 		["index"] = "water",
@@ -1270,7 +1240,6 @@ local itemlist = {
 		["name"] = "Lockpick de Alumínio",
 		["desc"] = "Utilizada para roubar veículos.",
 		["type"] = "Usável",
-		["durability"] = 3,
 		["weight"] = 1.25
 	},
 	["lockpick2"] = {
@@ -1278,7 +1247,6 @@ local itemlist = {
 		["name"] = "Lockpick de Cobre",
 		["desc"] = "Utilizada para roubar propriedades.",
 		["type"] = "Usável",
-		["durability"] = 3,
 		["weight"] = 1.25
 	},
 	["brokenpick"] = {
@@ -1641,14 +1609,6 @@ local itemlist = {
 		["durability"] = 7,
 		["weight"] = 0.75
 	},
-	["WEAPON_RPG"] = {
-		["index"] = "rpg-7",
-		["name"] = "RPG-7",
-		["type"] = "Armamento",
-		["ammo"] = "WEAPON_RPG_AMMO",
-		["durability"] = 5,
-		["weight"] = 20.25
-	},
 	["WEAPON_PISTOL"] = {
 		["index"] = "m1911",
 		["name"] = "M1911",
@@ -1702,15 +1662,6 @@ local itemlist = {
 		["vehicle"] = true,
 		["weight"] = 1.75
 	},
-	["WEAPON_COMBATPDW"] = {
-		["index"] = "sigmpx",
-		["name"] = "Sig MPX",
-		["type"] = "Armamento",
-		["ammo"] = "WEAPON_SMG_AMMO",
-		["durability"] = 14,
-		["vehicle"] = true,
-		["weight"] = 1.80
-	},
 	["WEAPON_MICROSMG"] = {
 		["index"] = "uzi",
 		["name"] = "Uzi",
@@ -1756,24 +1707,6 @@ local itemlist = {
 		["vehicle"] = true,
 		["weight"] = 1.25
 	},
-	["WEAPON_CERAMICPISTOL"] = {
-		["index"] = "sr22",
-		["name"] = "SR22",
-		["type"] = "Armamento",
-		["ammo"] = "WEAPON_PISTOL_AMMO",
-		["durability"] = 14,
-		["vehicle"] = true,
-		["weight"] = 1.25
-	},
-	["WEAPON_GADGETPISTOL"] = {
-		["index"] = "mauser",
-		["name"] = "Mauser",
-		["type"] = "Armamento",
-		["ammo"] = "WEAPON_PISTOL_AMMO",
-		["durability"] = 14,
-		["vehicle"] = true,
-		["weight"] = 1.25
-	},
 	["WEAPON_PISTOL50"] = {
 		["index"] = "desert",
 		["name"] = "Desert Eagle",
@@ -1791,42 +1724,6 @@ local itemlist = {
 		["durability"] = 14,
 		["vehicle"] = true,
 		["weight"] = 1.50
-	},
-	["WEAPON_REVOLVER_MK2"] = {
-		["index"] = "blackhawk",
-		["name"] = "Blackhawk",	
-		["type"] = "Armamento",
-		["ammo"] = "WEAPON_PISTOL_AMMO",
-		["durability"] = 14,
-		["vehicle"] = true,
-		["weight"] = 1.65
-	},
-	["WEAPON_DOUBLEACTION"] = {
-		["index"] = "rt66",
-		["name"] = "RT66",
-		["type"] = "Armamento",
-		["ammo"] = "WEAPON_PISTOL_AMMO",
-		["durability"] = 14,
-		["vehicle"] = true,
-		["weight"] = 1.40
-	},
-	["WEAPON_NAVYREVOLVER"] = {
-		["index"] = "redhawk",
-		["name"] = "Redhawk",
-		["type"] = "Armamento",
-		["ammo"] = "WEAPON_PISTOL_AMMO",
-		["durability"] = 14,
-		["vehicle"] = true,
-		["weight"] = 1.70
-	},
-	["WEAPON_MARKSMANPISTOL"] = {
-		["index"] = "huntingpistol",
-		["name"] = "Pistola de Caça",
-		["type"] = "Armamento",
-		["ammo"] = "WEAPON_MUSKET_AMMO",
-		["durability"] = 12,
-		["vehicle"] = false,
-		["weight"] = 1.80
 	},
 	["WEAPON_COMBATPISTOL"] = {
 		["index"] = "glock",
@@ -1879,7 +1776,7 @@ local itemlist = {
 	},
 	["WEAPON_SPECIALCARBINE"] = {
 		["index"] = "g36c",
-		["name"] = "G3",
+		["name"] = "G36C",
 		["type"] = "Armamento",
 		["ammo"] = "WEAPON_RIFLE_AMMO",
 		["durability"] = 21,
@@ -1887,51 +1784,11 @@ local itemlist = {
 	},
 	["WEAPON_SPECIALCARBINE_MK2"] = {
 		["index"] = "sigsauer556",
-		["name"] = "G36C",
+		["name"] = "Sig Sauer 556",
 		["type"] = "Armamento",
 		["ammo"] = "WEAPON_RIFLE_AMMO",
 		["durability"] = 21,
 		["weight"] = 8.25
-	},
-	["WEAPON_HEAVYRIFLE"] = {
-		["index"] = "scar-h",
-		["name"] = "Scar-H",
-		["type"] = "Armamento",
-		["ammo"] = "WEAPON_RIFLE_AMMO",
-		["durability"] = 21,
-		["weight"] = 8.25
-	},
-	["WEAPON_MILITARYRIFLE"] = {
-		["index"] = "auga3",
-		["name"] = "Aug-A3",
-		["type"] = "Armamento",
-		["ammo"] = "WEAPON_RIFLE_AMMO",
-		["durability"] = 21,
-		["weight"] = 8.25
-	},
-	["WEAPON_COMBATMG_MK2"] = {
-		["index"] = "fnspw",
-		["name"] = "FN SPW",
-		["type"] = "Armamento",
-		["ammo"] = "WEAPON_RIFLE_AMMO",
-		["durability"] = 25,
-		["weight"] = 10.35
-	},
-	["WEAPON_COMBATMG"] = {
-		["index"] = "mk46",
-		["name"] = "MK46",
-		["type"] = "Armamento",
-		["ammo"] = "WEAPON_RIFLE_AMMO",
-		["durability"] = 25,
-		["weight"] = 10.35
-	},
-	["WEAPON_MG"] = {
-		["index"] = "m249",
-		["name"] = "M249",
-		["type"] = "Armamento",
-		["ammo"] = "WEAPON_RIFLE_AMMO",
-		["durability"] = 25,
-		["weight"] = 10.35
 	},
 	["WEAPON_PUMPSHOTGUN"] = {
 		["index"] = "mossberg590",
@@ -1962,22 +1819,6 @@ local itemlist = {
 		["name"] = "Sauer 101",
 		["type"] = "Armamento",
 		["ammo"] = "WEAPON_MUSKET_AMMO",
-		["durability"] = 21,
-		["weight"] = 8.25
-	},
-	["WEAPON_HEAVYSNIPER_MK2"] = {
-		["index"] = "barret",
-		["name"] = "Barret",
-		["type"] = "Armamento",
-		["ammo"] = "WEAPON_RIFLE_AMMO",
-		["durability"] = 21,
-		["weight"] = 8.25
-	},
-	["WEAPON_MARKSMANRIFLE_MK2"] = {
-		["index"] = "mk17",
-		["name"] = "MK17",
-		["type"] = "Armamento",
-		["ammo"] = "WEAPON_RIFLE_AMMO",
 		["durability"] = 21,
 		["weight"] = 8.25
 	},
@@ -2086,24 +1927,6 @@ local itemlist = {
 		["economy"] = 225,
 		["max"] = 3
 	},
-	["WEAPON_GRENADE"] = {
-		["index"] = "grenade",
-		["name"] = "Granada",
-		["type"] = "Throwing",
-		["vehicle"] = true,
-		["weight"] = 0.50,
-		["economy"] = 225,
-		["max"] = 3
-	},
-	["WEAPON_FLARE"] = {
-		["index"] = "flare",
-		["name"] = "Sinalizador",
-		["type"] = "Throwing",
-		["vehicle"] = true,
-		["weight"] = 0.50,
-		["economy"] = 225,
-		["max"] = 3
-	},
 	["GADGET_PARACHUTE"] = {
 		["index"] = "parachute",
 		["name"] = "Paraquedas",
@@ -2116,12 +1939,6 @@ local itemlist = {
 		["type"] = "Armamento",
 		["durability"] = 21,
 		["weight"] = 0.75
-	},
-	["WEAPON_RPG_AMMO"] = {
-		["index"] = "rpgammo",
-		["name"] = "Munição de RPG",
-		["type"] = "Munição",
-		["weight"] = 0.10
 	},
 	["WEAPON_PISTOL_AMMO"] = {
 		["index"] = "pistolammo",
@@ -2473,6 +2290,143 @@ local itemlist = {
 		["name"] = "Pendrive",
 		["type"] = "Comum",
 		["durability"] = 7,
+		["weight"] = 0.25
+	},
+	
+	
+--------------
+-- COLHEITA --
+--------------
+
+	["lettuce"] = {
+		["index"] = "lettuce",
+		["name"] = "Alface",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["carrot"] = {
+		["index"] = "carrot",
+		["name"] = "Cenoura",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["potato"] = {
+		["index"] = "potato",
+		["name"] = "Batata",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	
+------------------
+-- INGREDIENTES --
+------------------	
+	
+	["claraemneve"] = {
+		["index"] = "claraemneve",
+		["name"] = "Clara em Neve",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["caldadechocolate"] = {
+		["index"] = "caldadechocolate",
+		["name"] = "Calda de Chocolate",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["carnefatiada"] = {
+		["index"] = "carnefatiada",
+		["name"] = "Carne Fatiada",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["linguiçacalabresa"] = {
+		["index"] = "linguiçacalabresa",
+		["name"] = "Linguiça Calabresa",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["frangocortado"] = {
+		["index"] = "frangocortado",
+		["name"] = "Frango Cortado",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["peixefatiado"] = {
+		["index"] = "peixefatiado",
+		["name"] = "Peixe Fatiado",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["tomatecortado"] = {
+		["index"] = "tomatecortado",
+		["name"] = "Tomate Cortado",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["alfacelavado"] = {
+		["index"] = "alfacelavado",
+		["name"] = "Alface Lavado",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["alganori"] = {
+		["index"] = "alganori",
+		["name"] = "Alga Nori",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["cenouralavada"] = {
+		["index"] = "cenouralavada",
+		["name"] = "Cenoura Lavada",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["laranjacortada"] = {
+		["index"] = "laranjacortada",
+		["name"] = "Laranja Cortada",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["morangocortado"] = {
+		["index"] = "morangocortado",
+		["name"] = "Morango Cortado",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["arroz"] = {
+		["index"] = "arroz",
+		["name"] = "Arroz",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["macarrao"] = {
+		["index"] = "macarrao",
+		["name"] = "Macarrão",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["farinhadetrigo"] = {
+		["index"] = "farinhadetrigo",
+		["name"] = "Farinha de Trigo",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["batatacortada"] = {
+		["index"] = "batatacortada",
+		["name"] = "Batata Cortada",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["bananacortada"] = {
+		["index"] = "bananacortada",
+		["name"] = "Banana Cortada",
+		["type"] = "Comum",
+		["weight"] = 0.25
+	},
+	["destiladodepreparacao"] = {
+		["index"] = "destiladodepreparacao",
+		["name"] = "Destilado de Preparação",
+		["type"] = "Comum",
 		["weight"] = 0.25
 	}
 }

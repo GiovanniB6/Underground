@@ -16,10 +16,9 @@ vRP.prepare("characters/removeFines","UPDATE summerz_characters SET fines = fine
 vRP.prepare("characters/getCharacters","SELECT * FROM summerz_characters WHERE steam = @steam and deleted = 0")
 vRP.prepare("characters/removePrison","UPDATE summerz_characters SET prison = prison - @prison WHERE id = @user_id")
 vRP.prepare("characters/updateName","UPDATE summerz_characters SET name = @name, name2 = @name2 WHERE id = @user_id")
-vRP.prepare("characters/updateDate","UPDATE summerz_characters SET date = @date WHERE id = @id")
 vRP.prepare("characters/lastCharacters","SELECT id FROM summerz_characters WHERE steam = @steam ORDER BY id DESC LIMIT 1")
 vRP.prepare("characters/countPersons","SELECT COUNT(steam) as qtd FROM summerz_characters WHERE steam = @steam and deleted = 0")
-vRP.prepare("characters/newCharacter","INSERT INTO summerz_characters(steam,name,name2,date,locate,sex,phone,serial,blood) VALUES(@steam,@name,@name2,@date,@locate,@sex,@phone,@serial,@blood)")
+vRP.prepare("characters/newCharacter","INSERT INTO summerz_characters(steam,name,name2,locate,sex,phone,serial,blood) VALUES(@steam,@name,@name2,@locate,@sex,@phone,@serial,@blood)")
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- BANK
 -----------------------------------------------------------------------------------------------------------------------------------------
@@ -115,7 +114,7 @@ vRP.prepare("races/insertRecords","INSERT INTO summerz_races(raceid,user_id,name
 -----------------------------------------------------------------------------------------------------------------------------------------
 vRP.prepare("fidentity/getResults","SELECT * FROM summerz_fidentity WHERE id = @id")
 vRP.prepare("fidentity/lastIdentity","SELECT id FROM summerz_fidentity ORDER BY id DESC LIMIT 1")
-vRP.prepare("fidentity/newIdentity","INSERT INTO summerz_fidentity(name,name2,date,locate,blood) VALUES(@name,@name2,@date,@locate,@blood)")
+vRP.prepare("fidentity/newIdentity","INSERT INTO summerz_fidentity(name,name2,locate,blood) VALUES(@name,@name2,@locate,@blood)")
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- CLEANSMARTPHONE
 -----------------------------------------------------------------------------------------------------------------------------------------
@@ -127,7 +126,7 @@ vRP.prepare("smartphone/cleanMessages","DELETE FROM smartphone_whatsapp_messages
 -----------------------------------------------------------------------------------------------------------------------------------------
 vRP.prepare("summerz/playerdata","DELETE FROM summerz_playerdata WHERE dvalue = '[]' OR dvalue = '{}'")
 vRP.prepare("summerz/entitydata","DELETE FROM summerz_entitydata WHERE dvalue = '[]' OR dvalue = '{}'")
---[[ vRP.prepare("summerz/cleanBanks","DELETE FROM smartphone_bank WHERE (DATEDIFF(CURRENT_DATE,data) >= 7)") ]]
+vRP.prepare("summerz/cleanBanks","DELETE FROM smartphone_bank WHERE (DATEDIFF(CURRENT_DATE,data) >= 7)")
 vRP.prepare("summerz/cleanPremium","UPDATE summerz_accounts SET premium = '0', priority = '0' WHERE UNIX_TIMESTAMP() >= premium")
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- THREADCLEANERS
@@ -135,9 +134,9 @@ vRP.prepare("summerz/cleanPremium","UPDATE summerz_accounts SET premium = '0', p
 Citizen.CreateThread(function()
 	vRP.execute("summerz/playerdata")
 	vRP.execute("summerz/entitydata")
-	--[[ vRP.execute("summerz/cleanBanks") ]]
+	vRP.execute("summerz/cleanBanks")
 	vRP.execute("summerz/cleanPremium")
-	--[[ vRP.execute("smartphone/cleanCalls")
+	vRP.execute("smartphone/cleanCalls")
 	vRP.execute("smartphone/cleanMessages")
-	vRP.execute("smartphone/cleanTorMessages") ]]
+	vRP.execute("smartphone/cleanTorMessages")
 end)

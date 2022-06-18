@@ -73,28 +73,105 @@ end
 -- GARAGELOCATES
 -----------------------------------------------------------------------------------------------------------------------------------------
 local garageLocates = {
-	-------------------------------------------------------------------------------------------------------------------------------------
-	-- MAIN GARAGES
-	-------------------------------------------------------------------------------------------------------------------------------------
+	-- Garages
 	["1"] = { name = "Garage", payment = false },
-	["2"] = { name = "Garage", payment = false },
+	["2"] = { name = "Garage", payment = true },
 	["3"] = { name = "Garage", payment = false },
-	["4"] = { name = "Garage", payment = false },
-	-------------------------------------------------------------------------------------------------------------------------------------
-	-- BIKE GARAGES
-	-------------------------------------------------------------------------------------------------------------------------------------
-	["5"] = { name = "Bikes", payment = false },
-	["6"] = { name = "Bikes", payment = false },
-	["7"] = { name = "Bikes", payment = false },
-	-------------------------------------------------------------------------------------------------------------------------------------
-	-- HOTEL GARAGES
-	-------------------------------------------------------------------------------------------------------------------------------------
-	["8"] = { name = "Garage", payment = false },
-	["9"] = { name = "Garage", payment = false },
-	-------------------------------------------------------------------------------------------------------------------------------------
-	-- RESTAURANT GARAGES
-	-------------------------------------------------------------------------------------------------------------------------------------
+	["4"] = { name = "Garage", payment = true },
+	["5"] = { name = "Garage", payment = true },
+	["6"] = { name = "Garage", payment = true },
+	["7"] = { name = "Garage", payment = true },
+	["8"] = { name = "Garage", payment = true },
+	["9"] = { name = "Garage", payment = true },
 	["10"] = { name = "Garage", payment = true },
+	["11"] = { name = "Garage", payment = true },
+	["12"] = { name = "Garage", payment = true },
+	["13"] = { name = "Garage", payment = true },
+	["14"] = { name = "Garage", payment = true },
+	["15"] = { name = "Garage", payment = true },
+	["16"] = { name = "Garage", payment = true },
+	["17"] = { name = "Garage", payment = true },
+	["18"] = { name = "Garage", payment = true },
+	["19"] = { name = "Garage", payment = true },
+	["20"] = { name = "Garage", payment = true },
+	["21"] = { name = "Garage", payment = true },
+	["22"] = { name = "Garage", payment = true },
+	["23"] = { name = "Garage", payment = false },
+	["24"] = { name = "Garage", payment = true },
+	["25"] = { name = "Garage", payment = true },
+
+	-- Paramedic
+	["41"] = { name = "Paramedic", payment = false, perm = "Paramedic" },
+	["42"] = { name = "heliParamedic", payment = false, perm = "Paramedic" },
+
+	["43"] = { name = "Paramedic", payment = false, perm = "Paramedic" },
+	["44"] = { name = "heliParamedic", payment = false, perm = "Paramedic" },
+
+	["45"] = { name = "Paramedic", payment = false, perm = "Paramedic" },
+	["46"] = { name = "heliParamedic", payment = false, perm = "Paramedic" },
+
+	-- Police
+	["61"] = { name = "Police", payment = false, perm = "Police" },
+	["62"] = { name = "heliPolice", payment = false, perm = "Police" },
+
+	["63"] = { name = "Police", payment = false, perm = "Police" },
+	["64"] = { name = "heliPolice", payment = false, perm = "Police" },
+
+	["65"] = { name = "Police", payment = false, perm = "Police" },
+	["66"] = { name = "heliPolice", payment = false, perm = "Police" },
+
+	["67"] = { name = "Police", payment = false, perm = "Police" },
+	["68"] = { name = "busPolice", payment = false, perm = "Police" },
+
+	["69"] = { name = "Police", payment = false, perm = "Police" },
+
+	["70"] = { name = "Police", payment = false, perm = "Police" },
+	["71"] = { name = "heliPolice", payment = false, perm = "Police" },
+	["72"] = { name = "busPolice", payment = false, perm = "Police" },
+
+	-- Bikes
+	["101"] = { name = "Bikes", payment = false },
+	["102"] = { name = "Bikes", payment = false },
+	["103"] = { name = "Bikes", payment = false },
+	["104"] = { name = "Bikes", payment = false },
+	["105"] = { name = "Bikes", payment = false },
+	["106"] = { name = "Bikes", payment = false },
+	["107"] = { name = "Bikes", payment = false },
+	["108"] = { name = "Bikes", payment = false },
+	["109"] = { name = "Bikes", payment = false },
+	["110"] = { name = "Bikes", payment = false },
+	["111"] = { name = "Bikes", payment = false },
+	["112"] = { name = "Bikes", payment = false },
+	["113"] = { name = "Bikes", payment = false },
+	["114"] = { name = "Bikes", payment = false },
+	["115"] = { name = "Bikes", payment = false },
+	["116"] = { name = "Bikes", payment = false },
+	["117"] = { name = "Bikes", payment = false },
+	["118"] = { name = "Bikes", payment = false },
+
+	-- Boats
+	["121"] = { name = "Boats", payment = false },
+	["122"] = { name = "Boats", payment = false },
+	["123"] = { name = "Boats", payment = false },
+	["124"] = { name = "Boats", payment = false },
+	["125"] = { name = "Boats", payment = false },
+	["126"] = { name = "Boats", payment = false },
+
+	-- Works
+	["141"] = { name = "Lumberman", payment = false },
+	["142"] = { name = "Driver", payment = false },
+	["143"] = { name = "Garbageman", payment = false },
+	["144"] = { name = "Transporter", payment = false },
+	["145"] = { name = "Taxi", payment = false },
+	["146"] = { name = "TowDriver", payment = false },
+	["147"] = { name = "TowDriver", payment = false },
+	["148"] = { name = "TowDriver", payment = false },
+	["149"] = { name = "Garbageman", payment = false },
+	["150"] = { name = "Garbageman", payment = false },
+	["151"] = { name = "Taxi", payment = false },
+	["152"] = { name = "TowDriver", payment = false, perm = "Mechanic" },
+	["153"] = { name = "Desserts", payment = false, perm = "Desserts" },
+	["154"] = { name = "Vinhedo", payment = true, perm = "Vinhedo" }
 }
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- SIGNALREMOVE
@@ -198,8 +275,8 @@ local workGarages = {
 		"pbus",
 		"riot"
 	},
-	["Lifeguard"] = {
-		"blazer2"
+	["Driver"] = {
+		"bus"
 	},
 	["Boats"] = {
 		"dinghy",
@@ -465,7 +542,7 @@ end)
 RegisterCommand("car",function(source,args,rawCommand)
 	local user_id = vRP.getUserId(source)
 	if user_id then
-		if vRP.hasGroup(user_id,"Admin") and args[1] then
+		if vRP.hasGroup(user_id,"Admin") and vehicleExist(args[1]) then
 			local ped = GetPlayerPed(source)
 			local coords = GetEntityCoords(ped)
 			local heading = GetEntityHeading(ped)

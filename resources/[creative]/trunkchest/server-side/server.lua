@@ -123,22 +123,60 @@ local noStore = {
 	["pirarucu"] = true,
 	["tambaqui"] = true,
 	["energetic"] = true,
-	["milkbottle"] = true,
+	
+--------------
+-- COLHEITA --
+--------------
+
+	["milkbottle"] = true, --
+	["egg"] = true,--
+	["eggcarton"] = true, --
+	["lettuce"] = true,
+	["carrot"] = true,
+	["potato"] = true,
+	["banana"] = true, --
+	["tomato"] = true, --
+	["orange"] = true, --
+	["strawberry"] = true, --
+	["wheat"] = true, --
+	
+------------------
+-- INGREDIENTES --
+------------------
+
+	["claraemneve"] = true,
+	["caldadechocolate"] = true,
+	["carnefatiada"] = true,
+	["linguiçacalabresa"] = true,
+	["frangocortado"] = true,
+	["peixefatiado"] = true,
+	["tomatecortado"] = true,
+	["alfacelavado"] = true,
+	["alganori"] = true,
+	["cenouralavada"] = true,
+	["laranjacortada"] = true,
+	["morangocortado"] = true,
+	["arroz"] = true,
+	["macarrao"] = true,
+	["farinhadetrigo"] = true,
+	["batatacortada"] = true,
+	["bananacortada"] = true,
+	["destiladodepreparacao"] = true,
+
+----------
+
+
+	["grape"] = true,
+	["apple"] = true,
+	["tange"] = true,
 	["water"] = true,
 	["coffee"] = true,
 	["cola"] = true,
 	["tacos"] = true,
 	["fries"] = true,
 	["soda"] = true,
-	["orange"] = true,
-	["apple"] = true,
-	["strawberry"] = true,
 	["coffee2"] = true,
-	["grape"] = true,
-	["tange"] = true,
-	["banana"] = true,
 	["passion"] = true,
-	["tomato"] = true,
 	["mushroom"] = true,
 	["orangejuice"] = true,
 	["tangejuice"] = true,

@@ -65,12 +65,11 @@ $(document).ready(() => {
 	$(document).on("click","#createNew",function(e){
 		var name = $("#charNome").val();
 		var name2 = $("#charSobrenome").val();
-		var date = $("#charDate").val();
 		var gender = returnSeleted("gender");
 		var locate = returnSeleted("locate");
 
 		if (name != "" && name2 != ""){
-			$.post("http://spawn/newCharacter",JSON.stringify({ name: name, name2: name2, sex: gender, date: date, locate: locate }));
+			$.post("http://spawn/newCharacter",JSON.stringify({ name: name, name2: name2, sex: gender, loc: locate }));
 		}
 	});
 });

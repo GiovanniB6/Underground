@@ -95,8 +95,12 @@ local tableList = {
 		}, ["needAmount"] = 1, ["item"] = "foodbox", ["itemAmount"] = 1 }
 	},
 	["milkBottle"] = {
-		["anim"] = { "amb@prop_human_parking_meter@female@idle_a","idle_a_female" },
+		["anim"] = { "amb@medic@standing@tendtodead@idle_a","idle_a" },
 		[1] = { ["timer"] = 10, ["need"] = "emptybottle", ["needAmount"] = 1,  ["item"] = "milkbottle", ["itemAmount"] = 1 }
+	},
+	["eggCarton"] = {
+		["anim"] = { "amb@medic@standing@tendtodead@idle_a","idle_a" },
+		[1] = { ["timer"] = 10, ["need"] = "eggcarton", ["needAmount"] = 1,  ["item"] = "egg", ["itemAmount"] = 1 }
 	},
 	["scanner"] = {
 		[1] = { ["timer"] = 5, ["item"] = "sheetmetal", ["itemAmount"] = 1 },
@@ -731,7 +735,7 @@ AddEventHandler("inventory:useItem",function(Slot,Amount)
 			end
 		return end
 
-		if nameItem == "attachsFlashlight" or nameItem == "attachsBarrel" or nameItem == "attachsCrosshair" or nameItem == "attachsCrosshair2" or nameItem == "attachsCrosshair3" or nameItem == "attachsSilencer" or nameItem == "attachsGrip" or nameItem == "attachsMuzzleFat" or nameItem == "attachsMuzzleHeavy" or nameItem == "attachsExtendedClip" then
+		if nameItem == "attachsFlashlight" or nameItem == "attachsCrosshair" or nameItem == "attachsSilencer" or nameItem == "attachsGrip" then
 			local returnWeapon = vCLIENT.returnWeapon(source)
 			if returnWeapon then
 				if Attachs[user_id][returnWeapon] == nil then
@@ -1756,7 +1760,9 @@ AddEventHandler("inventory:useItem",function(Slot,Amount)
 									if GetVehicleDoorLockStatus(idNetwork) == 2 then
 										SetVehicleDoorsLocked(idNetwork,1)
 									end
-								
+								end
+
+								if math.random(100) >= 75 then
 									local activePlayers = vRPC.activePlayers(source)
 									for _,v in ipairs(activePlayers) do
 										async(function()
@@ -1799,13 +1805,15 @@ AddEventHandler("inventory:useItem",function(Slot,Amount)
 									if GetVehicleDoorLockStatus(idNetwork) == 2 then
 										SetVehicleDoorsLocked(idNetwork,1)
 									end
-
-								local activePlayers = vRPC.activePlayers(source)
-								for _,v in ipairs(activePlayers) do
-									async(function()
-										TriggerClientEvent("inventory:vehicleAlarm",v,vehNet,vehPlate)
-									end)
 								end
+
+								if math.random(100) >= 75 then
+									local activePlayers = vRPC.activePlayers(source)
+									for _,v in ipairs(activePlayers) do
+										async(function()
+											TriggerClientEvent("inventory:vehicleAlarm",v,vehNet,vehPlate)
+										end)
+									end
 
 									local coords = vRPC.getEntityCoords(source)
 									local policeResult = vRP.numPermission("Police")
