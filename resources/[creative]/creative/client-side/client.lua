@@ -51,8 +51,7 @@ Citizen.CreateThread(function()
 							SetVehicleEngineOn(vehicle,false,true,true)
 
 							local vehModel = GetEntityModel(vehicle)
-							if bikesModel[vehModel] == nil then
-								vehicleTyreBurst(vehicle)
+								if bikesModel[vehModel] == nil then
 							end
 						end
 					end
@@ -109,35 +108,6 @@ Citizen.CreateThread(function()
 		Citizen.Wait(100)
 	end
 end)
------------------------------------------------------------------------------------------------------------------------------------------
--- VEHICLETYREBURST
------------------------------------------------------------------------------------------------------------------------------------------
-function vehicleTyreBurst(Vehicle)
-	local Tyre = math.random(4)
-
-	if Tyre == 1 then
-		if GetTyreHealth(Vehicle,0) == 1000.0 then
-			SetVehicleTyreBurst(Vehicle,0,true,1000.0)
-		end
-	elseif Tyre == 2 then
-		if GetTyreHealth(Vehicle,1) == 1000.0 then
-			SetVehicleTyreBurst(Vehicle,1,true,1000.0)
-		end
-	elseif Tyre == 3 then
-		if GetTyreHealth(Vehicle,4) == 1000.0 then
-			SetVehicleTyreBurst(Vehicle,4,true,1000.0)
-		end
-	elseif Tyre == 4 then
-		if GetTyreHealth(Vehicle,5) == 1000.0 then
-			SetVehicleTyreBurst(Vehicle,5,true,1000.0)
-		end
-	end
-
-	if math.random(100) < 30 then
-		Citizen.Wait(500)
-		vehicleTyreBurst(Vehicle)
-	end
-end
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- BLIPS
 -----------------------------------------------------------------------------------------------------------------------------------------
