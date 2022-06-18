@@ -86,6 +86,7 @@ CREATE TABLE IF NOT EXISTS `summerz_characters` (
   `serial` varchar(6) DEFAULT NULL,
   `name` varchar(50) DEFAULT 'Individuo',
   `name2` varchar(50) DEFAULT 'Indigente',
+  `date` varchar(10) DEFAULT '00/00/0000',
   `locate` varchar(10) NOT NULL DEFAULT 'Sul',
   `sex` varchar(1) NOT NULL DEFAULT 'M',
   `blood` int(1) NOT NULL DEFAULT '1',
