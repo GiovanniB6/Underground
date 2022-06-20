@@ -6,6 +6,12 @@ local localPeds = {}
 -- PEDLIST
 -----------------------------------------------------------------------------------------------------------------------------------------
 local pedList = {
+	{ -- Lifeguard
+		distance = 50,
+		coords = { -1447.42,-1043.52,4.8,48.19 },
+		model = { 0x0B4A6862,"s_m_y_baywatch_01" },
+		anim = { "oddjobs@taxi@","idle_a" }
+	},
 	{ -- Concessionária
 		distance = 30,
 		coords = { 1230.03,2733.74,38.03,93.55 },
