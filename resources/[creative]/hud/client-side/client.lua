@@ -666,10 +666,6 @@ function nitroEnable()
 					if nitroFuel >= 1 then
 						nitroFuel = nitroFuel - 1
 
-						if not GetScreenEffectIsActive("RaceTurbo") then
-							StartScreenEffect("RaceTurbo",0,true)
-						end
-
 						SetVehicleCheatPowerIncrease(vehicle,5.0)
 						ModifyVehicleTopSpeed(vehicle,20.0)
 						fireExaust(vehicle)

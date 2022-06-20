@@ -62,47 +62,32 @@ local pedList = {
 	},
 	{ -- Salary
 		distance = 30,
-		coords = { -110.16,6468.93,31.63,133.23 },
+		coords = { 258.51,227.69,106.27,158.75 },
 		model = { 0x5D71A46F,"s_f_y_airhostess_01" }
 	},
 	{ -- Salary
 		distance = 30,
-		coords = { -111.21,6469.98,31.63,133.23 },
+		coords = { 263.19,225.93,106.27,158.75 },
 		model = { 0x5D71A46F,"s_f_y_airhostess_01" }
 	},
 	{ -- Salary
 		distance = 30,
-		coords = { -112.25,6471.08,31.63,133.23 },
+		coords = { 267.88,224.25,106.27,161.58 },
 		model = { 0x5D71A46F,"s_f_y_airhostess_01" }
 	},
 	{ -- Salary
 		distance = 30,
-		coords = { 254.05,222.73,106.30,158.75 },
+		coords = { 254.35,216.04,106.27,343.0 },
 		model = { 0x5D71A46F,"s_f_y_airhostess_01" }
 	},
 	{ -- Salary
 		distance = 30,
-		coords = { 252.26,223.39,106.30,158.75 },
+		coords = { 259.05,214.29,106.27,343.0 },
 		model = { 0x5D71A46F,"s_f_y_airhostess_01" }
 	},
 	{ -- Salary
 		distance = 30,
-		coords = { 248.95,224.59,106.30,158.75 },
-		model = { 0x5D71A46F,"s_f_y_airhostess_01" }
-	},
-	{ -- Salary
-		distance = 30,
-		coords = { 247.15,225.25,106.30,158.75 },
-		model = { 0x5D71A46F,"s_f_y_airhostess_01" }
-	},
-	{ -- Salary
-		distance = 30,
-		coords = { 243.82,226.46,106.30,158.75 },
-		model = { 0x5D71A46F,"s_f_y_airhostess_01" }
-	},
-	{ -- Salary
-		distance = 30,
-		coords = { 242.02,227.11,106.30,158.75 },
+		coords = { 263.73,212.63,106.27,343.0 },
 		model = { 0x5D71A46F,"s_f_y_airhostess_01" }
 	},
 	{ -- Prefeitura

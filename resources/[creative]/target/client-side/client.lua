@@ -44,7 +44,7 @@ Citizen.CreateThread(function()
 		}
 	})
 
-	AddCircleZone("bankSalary01",vector3(241.43,225.46,106.29),0.75,{
+	AddCircleZone("bankSalary01",vector3(258.15,226.65,106.27),0.75,{
 		name = "bankSalary01",
 		heading = 3374176
 	},{
@@ -62,7 +62,7 @@ Citizen.CreateThread(function()
 		}
 	})
 
-	AddCircleZone("bankSalary02",vector3(243.21,224.77,106.29),0.75,{
+	AddCircleZone("bankSalary02",vector3(262.88,224.88,106.27),0.75,{
 		name = "bankSalary02",
 		heading = 3374176
 	},{
@@ -80,7 +80,7 @@ Citizen.CreateThread(function()
 		}
 	})
 
-	AddCircleZone("bankSalary03",vector3(246.62,223.61,106.29),0.75,{
+	AddCircleZone("bankSalary03",vector3(267.59,223.27,106.27),0.75,{
 		name = "bankSalary03",
 		heading = 3374176
 	},{
@@ -98,7 +98,7 @@ Citizen.CreateThread(function()
 		}
 	})
 
-	AddCircleZone("bankSalary04",vector3(248.43,222.95,106.29),0.75,{
+	AddCircleZone("bankSalary04",vector3(264.0,213.68,106.27),0.75,{
 		name = "bankSalary04",
 		heading = 3374176
 	},{
@@ -116,7 +116,7 @@ Citizen.CreateThread(function()
 		}
 	})
 
-	AddCircleZone("bankSalary05",vector3(251.79,221.73,106.29),0.75,{
+	AddCircleZone("bankSalary05",vector3(259.28,215.29,106.27),0.75,{
 		name = "bankSalary05",
 		heading = 3374176
 	},{
@@ -134,62 +134,8 @@ Citizen.CreateThread(function()
 		}
 	})
 
-	AddCircleZone("bankSalary06",vector3(253.59,221.08,106.29),0.75,{
+	AddCircleZone("bankSalary06",vector3(254.62,217.1,106.27),0.75,{
 		name = "bankSalary06",
-		heading = 3374176
-	},{
-		distance = 1.0,
-		options = {
-			{
-				event = "bank:openSystem",
-				label = "Abrir",
-				tunnel = "client"
-			},{
-				event = "vRP:receiveSalary",
-				label = "Receber",
-				tunnel = "server"
-			}
-		}
-	})
-
-	AddCircleZone("bankSalary07",vector3(-113.01,6470.21,31.63),0.75,{
-		name = "bankSalary07",
-		heading = 3374176
-	},{
-		distance = 1.0,
-		options = {
-			{
-				event = "bank:openSystem",
-				label = "Abrir",
-				tunnel = "client"
-			},{
-				event = "vRP:receiveSalary",
-				label = "Receber",
-				tunnel = "server"
-			}
-		}
-	})
-
-	AddCircleZone("bankSalary08",vector3(-111.99,6469.15,31.63),0.75,{
-		name = "bankSalary08",
-		heading = 3374176
-	},{
-		distance = 1.0,
-		options = {
-			{
-				event = "bank:openSystem",
-				label = "Abrir",
-				tunnel = "client"
-			},{
-				event = "vRP:receiveSalary",
-				label = "Receber",
-				tunnel = "server"
-			}
-		}
-	})
-
-	AddCircleZone("bankSalary09",vector3(-110.92,6468.1,31.63),0.75,{
-		name = "bankSalary09",
 		heading = 3374176
 	},{
 		distance = 1.0,
@@ -1002,7 +948,7 @@ Citizen.CreateThread(function()
 		options = {
 			{
 				event = "robberys:jewelry",
-				label = "Roubar",
+				label = "",
 				tunnel = "server"
 			}
 		}
