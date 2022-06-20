@@ -100,7 +100,8 @@ local garageLocates = {
 	-------------------------------------------------------------------------------------------------------------------------------------
 	-- WORKS GARAGES
 	-------------------------------------------------------------------------------------------------------------------------------------
-	["13"] = { name = "Lifeguard", payment = false },
+	["13"] = { name = "Mechanic", payment = false, perm = "Mechanic"},
+	["14"] = { name = "Lifeguard", payment = false },
 }
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- SIGNALREMOVE
@@ -176,37 +177,6 @@ end)
 -- WORKGARAGES
 -----------------------------------------------------------------------------------------------------------------------------------------
 local workGarages = {
-	["Paramedic"] = {
-		"lguard",
-		"blazer2",
-		"ambulance",
-		"ambulance2"
-	},
-	["heliParamedic"] = {
-		"maverick2",
-		"firetruk"
-	},
-	["Police"] = {
-		"bmwr1200",
-		"hondanc700",
-		"fordtaurus",
-		"fordexplorer",
-		"corvette",
-		"challenger",
-		"fordmustanggt",
-		"crownvictoria",
-		"dodgecharger2014"
-	},
-	["heliPolice"] = {
-		"maverick2"
-	},
-	["busPolice"] = {
-		"pbus",
-		"riot"
-	},
-	["Lifeguard"] = {
-		"blazer2"
-	},
 	["Boats"] = {
 		"dinghy",
 		"jetmax",
@@ -218,25 +188,6 @@ local workGarages = {
 		"toro",
 		"tropic"
 	},
-	["Transporter"] = {
-		"stockade"
-	},
-	["Lumberman"] = {
-		"ratloader"
-	},
-	["TowDriver"] = {
-		"flatbed",
-		"towtruck2"
-	},
-	["Garbageman"] = {
-		"trash"
-	},
-	["Taxi"] = {
-		"taxi"
-	},
-	["Desserts"] = {
-		"youga2"
-	},
 	["Bikes"] = {
 		"bmx",
 		"cruiser",
@@ -246,9 +197,13 @@ local workGarages = {
 		"tribike2",
 		"tribike3"
 	},
+	["Mechanic"] = {
+		"flatbed",
+		"towtruck2"
+	},
 	["Lifeguard"] = {
 		"blazer2"
-	}
+	},
 }
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- VEHICLES
