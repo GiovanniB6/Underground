@@ -631,3 +631,23 @@ Citizen.CreateThread(function()
 		Citizen.Wait(10000)
 	end
 end)
+-----------------------------------------------------------------------------------------------------------------------------------------
+-- ROCKSTAR EDITOR
+-----------------------------------------------------------------------------------------------------------------------------------------
+RegisterCommand("rockstar",function(source,args)
+	if args[1] == nil then
+		TriggerEvent("Notify","azul","É necessário selecionar uma das opções para utilizar o Rockstar Editor.",3000)
+
+	elseif args[1] == "iniciar" then
+		StartRecording(1)
+		TriggerEvent("Notify","verde","Gravação iniciada.",2000)
+
+	elseif args[1] == "salvar" then
+		StopRecordingAndSaveClip()
+		TriggerEvent("Notify","verde","Gravação salva.",5000)
+
+	elseif args[1] == "editor" then
+		NetworkSessionLeaveSinglePlayer()
+		ActivateRockstarEditor()
+	end
+end)

@@ -249,11 +249,6 @@ Citizen.CreateThread(function()
 				label = "Encher",
 				tunnel = "police",
 				service = "emptybottle"
-			},
-			{
-				event = "inventory:Drink",
-				label = "Beber",
-				tunnel = "server"
 			}
 		},
 		distance = 0.75
