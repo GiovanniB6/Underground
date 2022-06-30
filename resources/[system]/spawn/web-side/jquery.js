@@ -65,11 +65,12 @@ $(document).ready(() => {
 	$(document).on("click","#createNew",function(e){
 		var name = $("#charNome").val();
 		var name2 = $("#charSobrenome").val();
+		var date = $("#charDate").val();
 		var gender = returnSeleted("gender");
 		var locate = returnSeleted("locate");
 
 		if (name != "" && name2 != ""){
-			$.post("http://spawn/newCharacter",JSON.stringify({ name: name, name2: name2, sex: gender, loc: locate }));
+			$.post("http://spawn/newCharacter",JSON.stringify({ name: name, name2: name2, sex: gender, date: date, locate: locate }));
 		}
 	});
 });
@@ -81,7 +82,6 @@ const generateDisplay = () => {
 
 		$("#charPage").html(`
 			<div class="charNew"><p>NOVO PERSONAGEM</p><o>Criar um novo personagem</o></div>
-
 			${characterList.map((item) => (`
 				<div class="charBox" data-id="${item["user_id"]}">
 					<div class="playerInfo">
@@ -106,7 +106,6 @@ const generateSpawn = () => {
 				<div class="spawnBox" data-hash="${item["hash"]}">
 					${item["name"]}
 				</div>`)).join("")}
-
 			<div id="spawnNew" data-hash="spawn">Confirmar</div>
 		`);
 
