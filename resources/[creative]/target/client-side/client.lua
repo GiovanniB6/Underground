@@ -471,6 +471,11 @@ Citizen.CreateThread(function()
 				event = "player:enterTrash",
 				label = "Esconder",
 				tunnel = "client"
+			},
+			{
+				event = "player:checkTrash",
+				label = "Checar Lixeira",
+				tunnel = "server"
 			}
 		},
 		distance = 0.75
@@ -1188,6 +1193,10 @@ local policeVeh = {
 		event = "inventory:applyPlate",
 		label = "Trocar Placa",
 		tunnel = "police"
+	},{
+		event = "player:checkTrunk",
+		label = "Checar Porta-Malas",
+		tunnel = "server"
 	},{
 		event = "trunkchest:openTrunk",
 		label = "Abrir Porta-Malas",
