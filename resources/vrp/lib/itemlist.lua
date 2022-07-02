@@ -1401,6 +1401,12 @@ local itemlist = {
 		["type"] = "Comum",
 		["weight"] = 0.0001
 	},
+	["dollarsz"] = {
+		["index"] = "dollarsz",
+		["name"] = "Dólares Enrolados",
+		["type"] = "Comum",
+		["weight"] = 0.0001
+	},
 	["battery"] = {
 		["index"] = "battery",
 		["name"] = "Pilhas",
