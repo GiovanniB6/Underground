@@ -735,7 +735,7 @@ AddEventHandler("inventory:useItem",function(Slot,Amount)
 			end
 		return end
 
-		if nameItem == "attachsFlashlight" or nameItem == "attachsBarrel" or nameItem == "attachsCrosshair" or nameItem == "attachsCrosshair2" or nameItem == "attachsCrosshair3" or nameItem == "attachsSilencer" or nameItem == "attachsGrip" or nameItem == "attachsMuzzleFat" or nameItem == "attachsMuzzleHeavy" or nameItem == "attachsExtendedClip" then
+		if nameItem == "attachsFlashlight" or nameItem == "attachsBarrel" or nameItem == "attachsCrosshair" or nameItem == "attachsSilencer" or nameItem == "attachsGrip" or nameItem == "attachsMuzzleFat" or nameItem == "attachsMuzzleHeavy" or nameItem == "attachsMagazineRifle" or nameItem == "attachsMagazineRifle2" or nameItem == "attachsMagazinePistol" or nameItem == "attachsMagazineSmg" then
 			local returnWeapon = vCLIENT.returnWeapon(source)
 			if returnWeapon then
 				if Attachs[user_id][returnWeapon] == nil then

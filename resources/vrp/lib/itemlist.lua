@@ -178,28 +178,77 @@ local itemlist = {
 		["type"] = "Usável",
 		["weight"] = 0.05
 	},
+	["attachsBarrel"] = {
+		["index"] = "attachsBarrel",
+		["name"] = "Cano Pesado",
+		["type"] = "Usável",
+		["ilegal"] = true,
+		["weight"] = 0.75
+	},
+	["attachsMuzzleHeavy"] = {
+		["index"] = "attachsMuzzleHeavy",
+		["name"] = "Compensador Tatico",
+		["type"] = "Usável",
+		["ilegal"] = true,
+		["weight"] = 0.75
+	},
+	["attachsMuzzleFat"] = {
+		["index"] = "attachsMuzzleFat",
+		["name"] = "Compensador Pesado",
+		["type"] = "Usável",
+		["ilegal"] = true,
+		["weight"] = 0.75
+	},
 	["attachsFlashlight"] = {
 		["index"] = "attachsFlashlight",
 		["name"] = "Lanterna Tatica",
 		["type"] = "Usável",
+		["ilegal"] = true,
 		["weight"] = 0.75
 	},
 	["attachsCrosshair"] = {
 		["index"] = "attachsCrosshair",
-		["name"] = "Mira Holográfica",
+		["name"] = "Mira Ajustável",
 		["type"] = "Usável",
+		["ilegal"] = true,
 		["weight"] = 0.75
 	},
 	["attachsSilencer"] = {
 		["index"] = "attachsSilencer",
-		["name"] = "Silenciador",
+		["name"] = "Supressor",
 		["type"] = "Usável",
+		["ilegal"] = true,
 		["weight"] = 0.75
 	},
 	["attachsGrip"] = {
 		["index"] = "attachsGrip",
 		["name"] = "Empunhadura",
 		["type"] = "Usável",
+		["ilegal"] = true,
+		["weight"] = 0.75
+	},
+	["attachsMagazineRifle"] = {
+		["index"] = "attachsMagazine",
+		["name"] = "Carregador Estendido",
+		["desc"] = "Compátivel com Rifle",
+		["type"] = "Usável",
+		["ilegal"] = true,
+		["weight"] = 0.75
+	},
+	["attachsMagazinePistol"] = {
+		["index"] = "attachsMagazine",
+		["name"] = "Carregador Estendido",
+		["desc"] = "Compátivel com Pistola",
+		["type"] = "Usável",
+		["ilegal"] = true,
+		["weight"] = 0.75
+	},
+	["attachsMagazineSmg"] = {
+		["index"] = "attachsMagazine",
+		["name"] = "Carregador Estendido",
+		["desc"] = "Compátivel com SMG",
+		["type"] = "Usável",
+		["ilegal"] = true,
 		["weight"] = 0.75
 	},
 	["cheese"] = {
@@ -304,6 +353,7 @@ local itemlist = {
 		["index"] = "explosives",
 		["name"] = "Explosivos",
 		["type"] = "Comum",
+		["durability"] = "14",
 		["weight"] = 0.15
 	},
 	["animalfat"] = {
