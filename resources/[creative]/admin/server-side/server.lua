@@ -291,7 +291,7 @@ RegisterCommand("hash",function(source,args,rawCommand)
 		if vRP.hasGroup(user_id,"Admin") then
 			local vehicle = vRPC.vehicleHash(source)
 			if vehicle then
-				vRP.updateTxt("hash.txt",vehicle)
+				print(vehicle)
 			end
 		end
 	end
