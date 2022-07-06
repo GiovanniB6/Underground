@@ -875,7 +875,6 @@ local vehList = {
 	[-986071517] = { "corvettec7",false },
 	[-1805585679] = { "mercedesg65",false },
 	[1604450211] = { "vwtouareg",false },
-	
 	[-670086588] = { "astron",false },
 	[1486521356] = { "buffalo4",false },
 	[461465043] = { "champion",false },
