@@ -58,6 +58,19 @@ AddEventHandler("player:ropeCarry",function(entity)
 	end
 end)
 -----------------------------------------------------------------------------------------------------------------------------------------
+-- HASHMODEL
+-----------------------------------------------------------------------------------------------------------------------------------------
+--[[ local unGlitch = GetGameTimer()
+AddEventHandler('entityDamaged',function(entity,attacker,weapon,fatal)
+	if weapon == GetHashKey("WEAPON_PISTOL") and unGlitch <= GetGameTimer() then
+		if DoesEntityExist(entity) then
+			unGlitch = GetGameTimer() + 350
+			Wait(350)
+			vRP.prompt("Model da Entidade:",GetEntityModel(entity))
+		end
+	end
+end) ]]
+-----------------------------------------------------------------------------------------------------------------------------------------
 -- THREADROPEANIM
 -----------------------------------------------------------------------------------------------------------------------------------------
 Citizen.CreateThread(function()
