@@ -429,7 +429,7 @@ Citizen.CreateThread(function()
 				local distance = #(coords - vector3(v["x"],v["y"],v["z"]))
 				if distance <= 15 then
 					timeDistance = 1
-					DrawMarker(23,v["x"],v["y"],v["z"] - 0.95,0.0,0.0,0.0,0.0,0.0,0.0,1.75,1.75,0.0,46,110,76,100,0,0,0,0)
+					DrawMarker(0,v["x"],v["y"],v["z"] - 0.95,0.0,0.0,0.0,0.0,0.0,0.0,1.75,1.75,0.0,46,110,76,100,0,0,0,0)
 
 					if IsControlJustPressed(1,38) and distance <= 1.0 and MumbleIsConnected() then
 						local Vehicles = vSERVER.Vehicles(k)
