@@ -2,6 +2,54 @@
 -- ITEMLIST
 -----------------------------------------------------------------------------------------------------------------------------------------
 local itemlist = {
+	["medicpass"] = {
+		["index"] = "medicbag",
+		["name"] = "Vale - Médico",
+		["desc"] = "Leve até um médico para troca-lo.",
+		["type"] = "Usável",
+		["weight"] = 0.0,
+		["economy"] = 0
+	},
+	["mechanicpass"] = {
+		["index"] = "mechanicpass",
+		["name"] = "Vale - Mecânico",
+		["desc"] = "Leve até um mecânico para troca-lo.",
+		["type"] = "Usável",
+		["weight"] = 0.0,
+		["economy"] = 0
+	},
+	["dessertspass"] = {
+		["index"] = "foodpass",
+		["name"] = "Vale - Uwu Café",
+		["desc"] = "Leve até o restaurante para troca-lo.",
+		["type"] = "Usável",
+		["weight"] = 0.0,
+		["economy"] = 0
+	},
+	["popsdinerpass"] = {
+		["index"] = "foodpass",
+		["name"] = "Vale - Pop's Diner",
+		["desc"] = "Leve até o restaurante para troca-lo.",
+		["type"] = "Usável",
+		["weight"] = 0.0,
+		["economy"] = 0
+	},
+	["pizzathispass"] = {
+		["index"] = "foodpass",
+		["name"] = "Vale - Pizza This",
+		["desc"] = "Leve até o restaurante para troca-lo.",
+		["type"] = "Usável",
+		["weight"] = 0.0,
+		["economy"] = 0
+	},
+	["burgershotpass"] = {
+		["index"] = "foodpass",
+		["name"] = "Vale - BurgerShot",
+		["desc"] = "Leve até o restaurante para troca-lo.",
+		["type"] = "Usável",
+		["weight"] = 0.0,
+		["economy"] = 0
+	},
 	["badge01"] = {
 		["index"] = "badge01",
 		["name"] = "Distintivo",
@@ -1588,6 +1636,42 @@ local itemlist = {
 		["weight"] = 0.75,
 		["economy"] = 1025
 	},
+	["WEAPON_LIGHTSABER_01"] = {
+		["index"] = "lightsaber01",
+		["name"] = "Sabre de Luz Azul",
+		["type"] = "Armamento",
+		["repair"] = "repairkit01",
+		["durability"] = 3,
+		["weight"] = 0.75,
+		["economy"] = 1225
+	},
+	["WEAPON_LIGHTSABER_02"] = {
+		["index"] = "lightsaber02",
+		["name"] = "Sabre de Luz Verde",
+		["type"] = "Armamento",
+		["repair"] = "repairkit01",
+		["durability"] = 3,
+		["weight"] = 0.75,
+		["economy"] = 1225
+	},
+	["WEAPON_LIGHTSABER_03"] = {
+		["index"] = "lightsaber03",
+		["name"] = "Sabre de Luz Amarelo",
+		["type"] = "Armamento",
+		["repair"] = "repairkit01",
+		["durability"] = 3,
+		["weight"] = 0.75,
+		["economy"] = 1225
+	},
+	["WEAPON_LIGHTSABER_04"] = {
+		["index"] = "lightsaber04",
+		["name"] = "Sabre de Luz Vermelho",
+		["type"] = "Armamento",
+		["repair"] = "repairkit01",
+		["durability"] = 3,
+		["weight"] = 0.75,
+		["economy"] = 1225
+	},
 	["WEAPON_BATTLEAXE"] = {
 		["index"] = "battleaxe",
 		["name"] = "Machado de Batalha",
@@ -2084,7 +2168,7 @@ local itemlist = {
 		["weight"] = 0.25,
 		["economy"] = 6
 	},
-	["WEAPON_SHOES"] = {
+	["WEAPON_SHOE"] = {
 		["index"] = "shoes",
 		["name"] = "Tênis",
 		["type"] = "Throwing",
