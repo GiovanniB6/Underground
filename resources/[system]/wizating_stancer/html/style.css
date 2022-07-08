@@ -1,0 +1,385 @@
+
+:root {
+
+  --OpenkeyXpos: 45%;
+  --OpenkeyYpos:  2%;
+  --StancerXpos:  1%;
+  --StancerYpos: 60%;
+  --Stancer-Background: url("images/stancerbackground.png");
+}
+
+
+body {
+    display:none;
+    overflow: hidden;
+    font-family: 'Nunito', sans-serif;
+    background-color: transparent !important;
+
+}
+
+.mainbg {
+    display:block;
+    position: absolute;
+    background-image: var(--Stancer-Background);
+    background-size: 200%;
+    background-repeat: no-repeat;
+    right:var(--StancerXpos);
+    bottom:var(--StancerYpos);
+    height:340px;
+    width:300px;
+    padding:0 !important;
+    z-index: 1;
+    user-select: none; 
+    border-radius:30px;
+    border: 3px solid rgb(122, 122, 122);
+
+}
+
+#mainbgmove {
+  position: absolute;
+  background-image: url("images/move.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height:30px;
+  width: 20px;
+  right:10%;
+  bottom:0%;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+#mainbgmove:hover {
+  opacity: 1.0;
+}
+
+
+.modeswitch {
+  position: absolute;
+
+  height:30px;
+  width: 20px;
+  left:10%;
+  bottom:5%;
+  cursor: pointer;
+
+}
+
+.mainbutton {
+  display:block;
+  position: absolute;
+  background-image: url("images/stancerbutton.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  left:var(--OpenkeyXpos);
+  bottom:var(--OpenkeyYpos);
+  height:75px;
+  width:75px;
+  padding:0 !important;
+  z-index: 1;
+  user-select: none; 
+  color: rgb(236, 194, 4);
+ 
+  
+}
+
+.mainbuttonText {
+  position: absolute;
+  height:20px;
+  width:35px;
+  left:30.5%;
+  bottom:40%;
+  font-size: 16px;
+}
+.savebutton {
+  position: absolute;
+ height : 9%;
+ margin-top: 1%;
+ width: 20%;
+ border-radius: 30px;
+ top:86%;
+ left:40%;
+ z-index: 2;
+ cursor: pointer;
+ text-align: center;
+ color: rgb(236, 194, 4);
+ font-size: 12px;
+ opacity: 0.9;
+ -webkit-transition: 0.2s;
+ transition: opacity 0.2s;
+}
+
+.savebutton:hover {
+  opacity: 1.0;
+
+}
+
+.sliders {
+  position: absolute;
+  width: 75%;
+  left: 12%;
+  top:0%;
+  margin-top: 10px;
+}
+
+P {
+  color: white;
+  text-align: center;
+ font-size: 12px;
+}
+
+
+.slider::after {
+  font-weight: bold;
+  content: "9.0";
+  color: rgb(236, 194, 4);
+  font-size: 13px;
+  position: absolute;
+  left: 90%;
+  top:25px;
+}
+
+.slider::before {
+  font-weight: bold;
+  content: "-25.0";
+  color: rgb(236, 194, 4);
+  font-size: 13px;
+  position: absolute;
+  left: 2%;
+  top:25px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width:100%;
+  height: 10px ;
+  background:rgb(212, 212, 212);
+  outline:none;
+  opacity:0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 12px;
+  box-shadow: 0px 1px 10px 1px black;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background-color: rgb(0, 0, 0);
+  border-radius:50%;
+  border: 5px solid rgb(236, 194, 4);
+  cursor: pointer;
+}
+
+.slider:hover {
+  opacity:1;
+}
+
+.slider:focus {
+  opacity:1;
+}
+
+.slider2::after {
+  content: "200";
+  color: rgb(236, 194, 4);
+  font-size: 13px;
+  position: absolute;
+  font-weight: bold;
+  left: 90%;
+  top:76px;
+}
+
+.slider2::before {
+  content: "-100";
+  color: rgb(236, 194, 4);
+  font-size: 13px;
+  font-weight: bold;
+  position: absolute;
+  left: 2%;
+  top:76px;
+}
+
+.slider2 {
+  -webkit-appearance: none;
+  width:100%;
+  height: 10px ;
+  background:rgb(212, 212, 212);
+  outline:none;
+  opacity:0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 12px;
+  box-shadow: 0px 1px 10px 1px black;
+}
+
+.slider2::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background-color: rgb(0, 0, 0);
+  border-radius:50%;
+  border: 5px solid rgb(236, 194, 4);
+  cursor: pointer;
+}
+
+.slider2:hover {
+  opacity:1;
+}
+
+.slider2:focus {
+  opacity:1;
+}
+.slider3::after {
+  content: "15";
+  color: rgb(236, 194, 4);
+  font-size: 13px;
+  position: absolute;
+  font-weight: bold;
+  left: 92%;
+  top:126px;
+}
+
+.slider3::before {
+  content: "-15";
+  color: rgb(236, 194, 4);
+  font-size: 13px;
+  font-weight: bold;
+  position: absolute;
+  left: 2%;
+  top:126px;
+}
+
+.slider3 {
+  display:block;
+  -webkit-appearance: none;
+  width:100%;
+  height: 10px ;
+  background:rgb(212, 212, 212);
+  outline:none;
+  opacity:0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 12px;
+  box-shadow: 0px 1px 10px 1px black;
+}
+
+.slider3::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background-color: rgb(0, 0, 0);
+  border-radius:50%;
+  border: 5px solid rgb(236, 194, 4);
+  cursor: pointer;
+}
+
+.slider3:hover {
+  opacity:1;
+}
+.slider3:focus {
+  opacity:1;
+}
+.slider4::after {
+  content: "450";
+  color: rgb(236, 194, 4);
+  font-size: 13px;
+  position: absolute;
+  font-weight: bold;
+  left: 91%;
+  top:68%;
+}
+
+.slider4::before {
+  content: "100";
+  color: rgb(236, 194, 4);
+  font-size: 13px;
+  font-weight: bold;
+  position: absolute;
+  left: 2%;
+  top:68%;
+}
+
+.slider4 {
+  display:block;
+  -webkit-appearance: none;
+  width:100%;
+  height: 10px ;
+  background:rgb(212, 212, 212);
+  outline:none;
+  opacity:0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 12px;
+  box-shadow: 0px 1px 10px 1px black;
+}
+
+.slider4::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background-color: rgb(0, 0, 0);
+  border-radius:50%;
+  border: 5px solid rgb(236, 194, 4);
+  cursor: pointer;
+}
+
+.slider4:hover {
+  opacity:1;
+}
+.slider4:focus {
+  opacity:1;
+}
+.slider5::after {
+  content: "32";
+  color: rgb(236, 194, 4);
+  font-size: 13px;
+  position: absolute;
+  font-weight: bold;
+  left: 91%;
+  top:88%;
+}
+
+.slider5::before {
+  content: "14";
+  color: rgb(236, 194, 4);
+  font-size: 13px;
+  font-weight: bold;
+  position: absolute;
+  left: 2%;
+  top:88%;
+}
+
+.slider5 {
+  -webkit-appearance: none;
+  width:100%;
+  height: 10px ;
+  background:rgb(212, 212, 212);
+  outline:none;
+  opacity:0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+  border-radius: 12px;
+  box-shadow: 0px 1px 10px 1px black;
+}
+
+.slider5::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  background-color: rgb(0, 0, 0);
+  border-radius:50%;
+  border: 5px solid rgb(236, 194, 4);
+  cursor: pointer;
+}
+
+.slider5:hover {
+  opacity:1;
+}
+.slider5:focus {
+  opacity:1;
+}
