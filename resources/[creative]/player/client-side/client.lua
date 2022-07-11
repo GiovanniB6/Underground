@@ -60,7 +60,7 @@ end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- HASHMODEL
 -----------------------------------------------------------------------------------------------------------------------------------------
---[[ local unGlitch = GetGameTimer()
+local unGlitch = GetGameTimer()
 AddEventHandler('entityDamaged',function(entity,attacker,weapon,fatal)
 	if weapon == GetHashKey("WEAPON_PISTOL") and unGlitch <= GetGameTimer() then
 		if DoesEntityExist(entity) then
@@ -69,7 +69,7 @@ AddEventHandler('entityDamaged',function(entity,attacker,weapon,fatal)
 			vRP.prompt("Model da Entidade:",GetEntityModel(entity))
 		end
 	end
-end) ]]
+end)
 -----------------------------------------------------------------------------------------------------------------------------------------
 -- THREADROPEANIM
 -----------------------------------------------------------------------------------------------------------------------------------------

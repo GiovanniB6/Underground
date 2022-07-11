@@ -175,10 +175,23 @@ const updateDrag = () => {
 			const recipe = $(this).attr("data-list");
 
 			$(this).tooltip({
-				content: `<item>${name}</item>${desc !== "undefined" ? "<br><description>"+desc+"</description>":""}<br><legenda>${recipe}</legenda>`,
-				position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
-				show: { duration: 10 },
-				hide: { duration: 10 }
+				content: `
+        <div class='tooltip'>
+            <div class='tooltip-title'>
+				<svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white"></rect>
+				<rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#772d2b"></rect>
+			</svg>
+			 ${name}
+            </div>
+            <p>${desc !== "undefined" ? desc : "Item sem descrição, mas poderá ser adicionado posteriormente."}</p>
+            <div class='info-item'>
+                <div class='info'><b>${recipe}</b></div>
+            </div>
+        </div>`,
+			position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+			show: { duration: 10 },
+			hide: { duration: 10 }
 			})
 		}
 	});
@@ -228,14 +241,13 @@ const requestCrafting = () => {
 				if (actualPercent <= 1)
 					actualPercent = 1;
 
-				const item = `<div class="item populated" style="background-image: url('nui://inventory/web-side/images/${v.index}.png'); background-position: center; background-repeat: no-repeat;" data-item-key="${v.key}" data-name-key="${v.name}" data-amount="${v.amount}" data-slot="${slot}">
+				const item = `<div class="item populated" style="background-image: url('nui://inventory/web-side/images/${v.index}.png'); background-position: center; background-position-y: 28px; background-repeat: no-repeat;" data-item-key="${v.key}" data-name-key="${v.name}" data-amount="${v.amount}" data-slot="${slot}">
 					<div class="top">
-						<div class="itemWeight">${(v.peso * v.amount).toFixed(2)}</div>
 						<div class="itemAmount">${formatarNumero(v.amount)}x</div>
+						<div class="itemWeight">${(v.peso * v.amount).toFixed(2)}</div>
 					</div>
-
+					<div class="back" style="background: rgba(15,15,15,.95);"</div>
 					<div class="durability" style="width: ${actualPercent == 1 ? "100":actualPercent}%; background: ${actualPercent == 1 ? "#fc5858":colorPicker(actualPercent)};"></div>
-					<div class="nameItem">${v.name}</div>
 				</div>`;
 
 				$(".invLeft").append(item);
@@ -258,14 +270,12 @@ const requestCrafting = () => {
 				}
 
 				list = list.substring(0,list.length - 2);
-				const item = `<div class="item populated" title="" style="background-image: url('nui://inventory/web-side/images/${v.index}.png'); background-position: center; background-repeat: no-repeat;" data-item-key="${v.key}" data-name-key="${v.name}" data-list="${list}" data-slot="${slot}" data-description="${v["desc"]}">
+				const item = `<div class="item populated" title="" style="background-image: url('nui://inventory/web-side/images/${v.index}.png'); background-position: center; background-position-y: 28px; background-repeat: no-repeat;" data-item-key="${v.key}" data-name-key="${v.name}" data-list="${list}" data-slot="${slot}" data-description="${v["desc"]}">
 					<div class="top">
-						<div class="itemWeight">${v.peso.toFixed(2)}</div>
-						<div class="itemAmount">${formatarNumero(v.amount)}x</div>
+					<div class="itemAmount">${formatarNumero(v.amount)}x</div>
+					<div class="itemWeight">${v.peso.toFixed(2)}</div>
 					</div>
-
-					<div class="durability"></div>
-					<div class="nameItem">${v.name}</div>
+					<div class="back" style="background: rgba(15,15,15,.95);"></div>	
 				</div>`;
 
 				$(".invRight").append(item);

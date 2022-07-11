@@ -88,11 +88,11 @@ const updateDrag = () => {
 				$(this).replaceWith(clone1);
 				$(clone1).data("slot",slot2);
 
-				ui.draggable.children(".top").children(".itemAmount").html(formatarNumero(ui.draggable.data("amount")) + "x");
 				ui.draggable.children(".top").children(".itemWeight").html(newWeightOldItem);
-				
-				$(clone1).children(".top").children(".itemAmount").html(formatarNumero(clone1.data("amount")) + "x");
+				ui.draggable.children(".top").children(".itemAmount").html(formatarNumero(ui.draggable.data("amount")) + "x");
+
 				$(clone1).children(".top").children(".itemWeight").html(newWeightClone1);
+				$(clone1).children(".top").children(".itemAmount").html(formatarNumero(clone1.data("amount")) + "x");
 			}
 
 			updateDrag();
@@ -315,13 +315,30 @@ const updateDrag = () => {
 			var max = $(this).attr("data-max");
 			var type = $(this).attr("data-type");
 			var name = $(this).attr("data-name-key");
+			var weight = $(this).attr("data-peso");
+			var amounts = $(this).attr("data-amount");
 			var description = $(this).attr("data-description");
 
 			$(this).tooltip({
-				content: `<item>${name}</item>${description !== "undefined" ? "<br><description>"+description+"</description>":""}<br><legenda>Tipo: <r>${type}</r> <s>|</s> Máximo: <r>${max !== "undefined" ? max:"S/L"}</r></legenda>`,
-				position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
-				show: { duration: 10 },
-				hide: { duration: 10 }
+				content: `
+        <div class='tooltip'>
+            <div class='tooltip-title'>
+				<svg width="0.729vw" height="0.625vw" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<rect x="8" width="8.48528" height="8.48528" rx="1" transform="rotate(45 8 0)" fill="white"></rect>
+				<rect x="6" width="8.48528" height="8.48528" rx="1" transform="rotate(45 6 0)" fill="#772d2b"></rect>
+			</svg>
+			 ${name}
+            </div>
+            <p>${description !== "undefined" ? description : "Item sem descrição, mas poderá ser adicionado posteriormente."}</p>
+            <div class='info-item'>
+                <div class='info'><a>Tipo:</a> <b>${type}</b></div>
+                <div class='info'><a>Máximo:</a> <b>${max !== "undefined" ? max:"S/L"}</b></div>
+                <div class='info'>${(weight * amounts).toFixed(2)}kg</div>
+            </div>
+        </div>`,
+			position: { my: "center top+10", at: "center bottom", collision: "flipfit" },
+			show: { duration: 10 },
+			hide: { duration: 10 }
 			});
 		}
 	});
@@ -371,14 +388,13 @@ const updateMochila = () => {
 				if (actualPercent <= 1)
 					actualPercent = 1;
 
-				const item = `<div class="item populated" title="" data-max="${v["max"]}" data-type="${v["type"]}" data-description="${v["desc"]}" style="background-image: url('images/${v["index"]}.png'); background-position: center; background-repeat: no-repeat;" data-amount="${v["amount"]}" data-peso="${v["peso"]}" data-item-key="${v["key"]}" data-name-key="${v["name"]}" data-slot="${slot}">
+				const item = `<div class="item populated" title="" data-max="${v["max"]}" data-type="${v["type"]}" data-description="${v["desc"]}" style="background-image: url('images/${v["index"]}.png'); background-position: center; background-position-y: 28px; background-repeat: no-repeat;" data-amount="${v["amount"]}" data-peso="${v["peso"]}" data-item-key="${v["key"]}" data-name-key="${v["name"]}" data-slot="${slot}">
 					<div class="top">
-						<div class="itemWeight">${(v["peso"] * v["amount"]).toFixed(2)}</div>
 						<div class="itemAmount">${formatarNumero(v["amount"])}x</div>
+						<div class="itemWeight">${(v["peso"] * v["amount"]).toFixed(2)}</div>
 					</div>
-
+					<div class="back" style="background: rgba(15,15,15,.95);"</div>	
 					<div class="durability" style="width: ${actualPercent == 1 ? "100":actualPercent}%; background: ${actualPercent == 1 ? "#fc5858":colorPicker(actualPercent)};"></div>
-					<div class="nameItem">${v["name"]}</div>
 				</div>`;
 
 				$(".invLeft").append(item);
@@ -401,14 +417,14 @@ const updateMochila = () => {
 				if (actualPercent <= 1)
 					actualPercent = 1;
 
-				const item = `<div class="item populated" style="background-image: url('nui://inventory/web-side/images/${v["index"]}.png'); background-position: center; background-repeat: no-repeat;" data-item-key="${v["key"]}" data-id="${v["id"]}" data-amount="${v["amount"]}" data-peso="${v["peso"]}" data-slot="${slot}">
+				const item = `<div class="item populated" style="background-image: url('nui://inventory/web-side/images/${v["index"]}.png'); background-position: center; background-position-y: 28px; background-repeat: no-repeat;" data-item-key="${v["key"]}" data-id="${v["id"]}" data-amount="${v["amount"]}" data-peso="${v["peso"]}" data-slot="${slot}">
 					<div class="top">
-						<div class="itemWeight">${(v["peso"] * v["amount"]).toFixed(2)}</div>
 						<div class="itemAmount">${formatarNumero(v["amount"])}x</div>
+						<div class="itemWeight">${(v["peso"] * v["amount"]).toFixed(2)}</div>
 					</div>
 
 					<div class="durability" style="width: ${actualPercent == 1 ? "100":actualPercent}%; background: ${actualPercent == 1 ? "#fc5858":colorPicker(actualPercent)};"></div>
-					<div class="nameItem">${v["name"]}</div>
+					<div class="backdurability"></div>
 				</div>`;
 
 				$(".invRight").append(item);

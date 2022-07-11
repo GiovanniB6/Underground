@@ -25,7 +25,7 @@ window.addEventListener("message",function(event){
 			$("#target-" + index).data("ServiceData",item["service"]);
 		});
 
-		$(".target-eye").css("color","#16ad76");
+		$(".target-eye").css("color","#a22c2d");
 
 	} else if (item["response"] == "leftTarget"){
 

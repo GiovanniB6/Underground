@@ -33,16 +33,15 @@ body {
 }
 
 .target-eye {
-	color: #d6d9df;
+	color: #ccc;
 	font-size: 2.4vh;
 	text-shadow: 1px 1px rgba(0,0,0,0.25);
 }
 
 .target-label-wrapper {
 	float: left;
-	color: #d6d9df;
+	color: #ccc;
 	letter-spacing: 1px;
-	text-shadow: 1px 1px #333;
 }
 
 .target-label {
@@ -54,15 +53,17 @@ body {
 }
 
 .target-label div {
-	color: #ccc;
+	position: relative;
 	display: table;
 	margin: 0 0 5px;
-	border-radius: 3px;
 	padding: 10px 15px 10px 15px;
-	background: rgba(15,15,15,.75);
+	border-radius: 5px;
+	align-items: center;
+	transition: all .2s;
+	background: rgba(17, 17, 17, 0.7);
 }
 
 .target-label div:hover {
-	color: #a0ceb6;
-	background: #2e6e4c;
+	color: #c9b2b2;
+	background: #922725;
 }

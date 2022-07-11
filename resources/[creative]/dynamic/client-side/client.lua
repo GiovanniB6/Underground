@@ -81,10 +81,12 @@ RegisterCommand("globalFunctions",function(source,args,rawCommand)
 			exports["dynamic"]:AddButton("Sapatos","Colocar/Retirar os sapatos.","player:outfitFunctions","Shoes","clothes",true)
 			exports["dynamic"]:AddButton("Colete","Colocar/Retirar o colete.","player:outfitFunctions","Vest","clothes",true)
 
-			exports["dynamic"]:AddButton("Aplicar Comum","Vestir as roupas comuns.","player:outfitFunctions","aplicar","outfit",true)
-			exports["dynamic"]:AddButton("Salvar Comum","Salvar as roupas comuns.","player:outfitFunctions","salvar","outfit",true)
-			exports["dynamic"]:AddButton("Aplicar Premium","Vestir as roupas premium.","player:outfitFunctions","preaplicar","outfit",true)
-			exports["dynamic"]:AddButton("Salvar Premium","Salvar as roupas premium.","player:outfitFunctions","presalvar","outfit",true)
+			exports["dynamic"]:AddButton("Aplicar","Vestir as roupas salvas.","player:outfitFunctions","aplicar","outfit",true)
+			exports["dynamic"]:AddButton("Salvar","Guardar as roupas do corpo.","player:outfitFunctions","salvar","outfit",true)
+			exports["dynamic"]:AddButton("Remover","Remover as roupas salvas.","player:outfitFunctions","remover","outfit",true)
+
+			exports["dynamic"]:AddButton("Aplicar","Vestir as roupas salvas.","player:outfitFunctions","preaplicar","premiumfit",true)
+			exports["dynamic"]:AddButton("Salvar","Guardar as roupas do corpo.","player:outfitFunctions","presalvar","premiumfit",true)
 
 			if animalHash ~= nil then
 				exports["dynamic"]:AddButton("Seguir","Seguir o proprietário.","dynamic:animalFunctions","seguir","animal",false)
@@ -109,7 +111,9 @@ RegisterCommand("globalFunctions",function(source,args,rawCommand)
 
 				exports["dynamic"]:AddButton("Colocar no Veículo","Colocar no veículo mais próximo.","player:cvFunctions","cv","otherPlayers",true)
 				exports["dynamic"]:AddButton("Remover do Veículo","Remover do veículo mais próximo.","player:cvFunctions","rv","otherPlayers",true)
-									
+				exports["dynamic"]:AddButton("Checar Porta-Malas","Vericar pessoa dentro do mesmo.","player:checkTrunk","","otherPlayers",true)
+				exports["dynamic"]:AddButton("Checar Lixeira","Vericar pessoa dentro da mesma.","player:checkTrash","","otherPlayers",true)
+				
 				exports["dynamic"]:SubMenu("Jogador","Pessoa mais próxima de você.","otherPlayers")
 			else
 				exports["dynamic"]:AddButton("Banco Dianteiro Esquerdo","Sentar no banco do motorista.","player:seatPlayer","0","vehicle",false)
@@ -126,6 +130,7 @@ RegisterCommand("globalFunctions",function(source,args,rawCommand)
 
 			exports["dynamic"]:SubMenu("Roupas","Colocar/Retirar roupas.","clothes")
 			exports["dynamic"]:SubMenu("Vestuário","Mudança de roupas rápidas.","outfit")
+			exports["dynamic"]:SubMenu("Vestuário Premium","Mudança de roupas premium.","premiumfit")
 			exports["dynamic"]:SubMenu("Propriedades","Todas as funções das propriedades.","propertys")
 
 			if animalHash ~= nil then
